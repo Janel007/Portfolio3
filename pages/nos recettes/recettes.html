@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recettes.css">
 
 </head>
 <body>
@@ -42,11 +42,19 @@
                 <li class="nav-item px-2">
                     <a class="nav-link" href="../connexion/user.html">Se connecter</a>
                 </li>
-                <form class="d-flex position-relative" role="search">
+               <!-- <form class="d-flex position-relative" role="search">
                     <input class="me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 50px">
                     <i class="fas fa-search position-absolute top-0 end-0 pe-3 py-3"></i>
-                </form>
+                </form>-->
             </ul>
+            <div class="dropdown ms-auto d-lg-block d-md-none ">
+                <button class="btn bg-white me-5 border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-user icon" ></i>
+                </button>
+                <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Se connecter</a></li>
+                    <li><a class="dropdown-item" href="#">Creer un compte</a></li>
+                </ul>
+            </div>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

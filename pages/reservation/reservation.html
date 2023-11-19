@@ -5,25 +5,31 @@
     <title>GreenFood</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reservation.css">
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg shadow">
+<div>
+    <h1 class="text-center mt-3"> Green Food</h1> <br>
+    <marquee behavior="" direction="left"><p class="display-5 text-center" style="font-family: 'lobster',sans-serif">Manger saine et équilibrer pour une meilleure vie et une santé de fer :)</p></marquee>
+</div>
+<nav class="navbar navbar-expand-lg shadow"  style="font-family:'roboto',sans-serif">
     <div class="container-fluid">
         <a class="navbar-brand "  href="#"><img src="../../image/logo.png" style="width:100px;height:70px;" alt=""></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-4 mb-2 mb-lg-0 ">
+            <ul class="navbar-nav ms-4 mb-2 mb-lg-0" >
                 <li class="nav-item ps-5 pe-2">
-                    <a class="nav-link "  href="../../index.html">Accueil</a>
+                    <a class="nav-link text-light" style="background-color: greenyellow"  href="../../index.html">Accueil</a>
                 </li>
                 <div class="dropdown">
-                    <a class="nav-link dropdown-toggle" href="../menu/menu.html" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-light" style="background-color: greenyellow" href="../menu/menu.html" data-bs-toggle="dropdown" aria-expanded="false">
                         menu
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../menu/menu.html">Nos Entree et Apperitif</a></li>
+                    <ul class="dropdown-menu opacity-75" style="background-color: black">
+                        <li><a class="dropdown-item" href="../menu/menu.html">Nos Entrees et Apperitifs</a></li>
                         <li><a class="dropdown-item" href="../menu/menu.html">Nos plats</a></li>
                         <li><a class="dropdown-item" href="../menu/menu.html">Nos desserts</a></li>
                         <li><a class="dropdown-item" href="../menu/menu.html">Nos cocktails</a></li>
@@ -31,29 +37,39 @@
                     </ul>
                 </div>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="../nos%20recettes/recettes.html">Nos recettes</a>
+                    <a class="nav-link text-light" style="background-color: greenyellow" href="../nos%20recettes/recettes.html">Nos recettes</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="../blog/blog.html">Blog</a>
+                    <a class="nav-link text-light" style="background-color: greenyellow" href="../blog/blog.html">Blog</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="#">Reservation</a>
+                    <a class="nav-link text-light" href="../connexion/user.html">Se connecter</a>
                 </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="../connexion/user.html">Se connecter</a>
+                <li class="nav-item px-5">
+                    <a class="nav-link text-light" style="background-color: #0a3622" href="#">Reservation</a>
                 </li>
+
                 <!--<form class="d-flex position-relative" role="search">
                     <input class="me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 50px">
                     <i class="fas fa-search position-absolute top-0 end-0 pe-3 py-3"></i>
                 </form>-->
             </ul>
+            <div class="dropdown ms-auto d-lg-block d-md-none ">
+                <button class="btn bg-white me-5 border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-user icon" ></i>
+                </button>
+                <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Se connecter</a></li>
+                    <li><a class="dropdown-item" href="#">Creer un compte</a></li>
+                </ul>
+            </div>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
 </nav>
-<div class="container-fluid mt-5">
+<div class="container-fluid" style="background-image: url('../../image/nav1.jpeg')">
+
     <div class="container">
         <div class="row bg-black">
                 <div class="col-lg-6 col-md-6 mb-3" style=" background-image: url('../../image/resev.jpeg');background-color: black;background-size: cover">
@@ -62,15 +78,15 @@
 
                     <div class="row g-3 mb-5">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Votre nom" aria-label="First name" required>
+                            <input type="text" class="form-control bg-transparent text-light" placeholder=" Votre nom" aria-label="First name" required>
                         </div>
                         <div class="col">
-                            <input type="email" class="form-control" placeholder="email" aria-label="Last name" required>
+                            <input type="email" class="form-control bg-transparent text-light" placeholder="email" aria-label="Last name" required>
                         </div>
                     </div>
                     <div class="row g-3 mb-5">
                         <div class="col">
-                            <select class="form-select" aria-label="Nombre de personne" required>
+                            <select class="form-select bg-transparent text-light" aria-label="Nombre de personne" required>
                                 <option selected>Nombre de personne</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -84,27 +100,34 @@
                             </select>
                         </div>
                         <div class="col">
-                            <input type="date" class="form-control" placeholder="date" aria-label="Last name" required>
+                            <input type="date" class="form-control bg-transparent text-light" placeholder="date" aria-label="Last name" required>
                         </div>
                     </div>
                     <div class="row g-3 mb-5">
                         <div class="col">
-                            <input type="number" class="form-control" placeholder="Votre numero" aria-label="First name" required>
+                            <input type="number" class="form-control bg-transparent text-light" placeholder="Votre numero" aria-label="First name" required>
                         </div>
                         <div class="col">
-                            <input type="time" class="form-control" placeholder="heure" aria-label="Last name" required>
+                            <input type="time" class="form-control bg-transparent text-light" placeholder="heure" aria-label="Last name" required>
                         </div>
                     </div>
-                    <input class="btn bg-transparent text-light" type="submit" value="Submit">
+                    <input class="btn text-light " style="background-color: gray" type="submit" value="Submit">
                 </div>
             <div class="col-lg-6 col-md-6 mb-3"  style="background-image: url('../../image/nav.png');background-color: black">
 
-                <h1 class="text-center " style="font-family: 'roboto',sans-serif">RESERVATION EN LIGNE</h1>
+                <h3 class="text-center text-light mb-5 mt-3" style="font-family: 'roboto',sans-serif">CONTACTEZ-NOUS</h3>
+                <p class="text-center mb-5" style="background-color:gray; color:white">~ Demande de reservation ~</p>
+                <h3 class="text-center text-light">xxxxxxxxx</h3>
+               <span>
+                    <h5 class="text-center text-light">Localisation</h5>
+                    <p class="text-light-">Restaurant GreenFood bonapriso <br>
+                    rue Dominque Savio</p>
+               </span>
+
             </div>
         </div>
     </div>
 </div>
-<p>reserver</p>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
