@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,500;1,300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  color: black;
+  transition: 0.5s;
+}
+.nav-link:hover, .nav-link.actives {
+  color: darkgreen !important; /* pour mettre une propriete en avant qu elle doit marcher*/
+}
+.nav-link:visited {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
