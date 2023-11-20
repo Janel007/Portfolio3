@@ -6,6 +6,7 @@
     <title>GreenFood Company</title>
     <link rel="icon" href="images/Logo%202.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
@@ -63,7 +64,7 @@
         </button>
     </div>
 </nav>
-<div class="carouselExampleAutoplaying carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="images/Restaurant1.jpeg" class="d-block w-100" alt="...">
@@ -136,10 +137,10 @@
         <div class="row">
            <div class="col-lg-7 col-md-6 py-5">
                <p class="fs-1 text-success mt-3 pt-5">Bienvenue chez-nous</p>
-               <p class="fs-4 pt-4 text-md-center">Le restaurant GreenFood vous invite à faire un voyage en direction de tous les pays du monde. Dégustez des plats sains, savoureux et équilibrés entre amis, en famille ou en couple accompagné </p>
+               <p class="fs-4 pt-4 text-justify" style="font-family: 'Playfair Display',sans-serif">Le restaurant GreenFood, à la rencontre des herbes et des épices d'ici et d'ailleurs, vous invite à faire un voyage cullinaire en direction de tous les pays du monde.<br>Une place d'honneur et de choix est faite aux herbes et aux légumes rares de saison.<br>Dégustez des plats sains, savoureux et équilibrés entre amis, en famille ou en couple, accompagnés de bons cocktails et finissant le voyage sur un dessert de votre choix. <br> Des repas surprenant faite d'amour et de folie vous attendent pour passer un agréable moment de détente. </p>
            </div>
-            <div class="col-lg-5 col-md-6 mt-5">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="col-lg-5 col-md-6">
+                <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="images/plats/Vite-un-menu-d-automne-improvise.jpg" class="d-block w-100" alt="...">
@@ -154,6 +155,14 @@
                             <img src="images/plats/Tarte-feuilletee-pomme-camembert.jpg" class="d-block w-75" alt="">
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
