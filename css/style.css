@@ -4,15 +4,27 @@ html {
   scroll-behavior: smooth;
 }
 
+nav {
+  background-color: darkgreen;
+}
+
 .nav-link {
-  color: black;
+  color: darkgreen;
   transition: 0.5s;
 }
 .nav-link:hover, .nav-link.actives {
-  color: darkgreen !important; /* pour mettre une propriete en avant qu elle doit marcher*/
+  color: red !important; /* pour mettre une propriete en avant qu elle doit marcher*/
 }
 .nav-link:visited {
-  color: black;
+  color: #eeeaea;
+}
+
+.c1 {
+  background-color: #002a00;
+}
+
+.c2 {
+  background-color: yellow;
 }
 
 /*# sourceMappingURL=style.css.map */

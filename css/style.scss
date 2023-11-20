@@ -3,16 +3,25 @@
 html{
   scroll-behavior: smooth;
 }
+nav{
+  background-color: darkgreen;
+}
 .nav-link{
-  color:black;
+  color:darkgreen;
   transition: .5s;
 
   &:hover,&.actives{
-    color: darkgreen !important;/* pour mettre une propriete en avant qu elle doit marcher*/
+    color: red !important;/* pour mettre une propriete en avant qu elle doit marcher*/
   }
 
   &:visited{
-    color: black;
+    color: #eeeaea;
   }
 
+}
+.c1{
+  background-color: #002a00;
+}
+.c2{
+  background-color: yellow;
 }
