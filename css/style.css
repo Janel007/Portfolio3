@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,500;1,300&display=swap");
@@ -6,12 +5,8 @@ html {
   scroll-behavior: smooth;
 }
 
-div h1::first-letter {
-  color: greenyellow;
-}
-
 nav {
-  background-color: black;
+  background-color: darkgreen;
 }
 
 .nav-link {
@@ -20,15 +15,9 @@ nav {
 }
 .nav-link:hover, .nav-link.actives {
   color: red !important; /* pour mettre une propriete en avant qu elle doit marcher*/
-  background-color: green;
 }
 .nav-link:visited {
   color: #eeeaea;
-}
-
-.fond {
-  background-color: #eedddd;
-  opacity: 75%;
 }
 
 .c1 {
@@ -36,90 +25,7 @@ nav {
 }
 
 .c2 {
-  background-color: greenyellow;
-}
-
-.foot1 {
-  text-decoration: none;
-  color: black;
-}
-
-.fa-facebook, .fa-twitter, .fa-instagram {
-  transition: 0.5s;
-  color: black;
-}
-.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover {
-  transform: scale(1.1);
-}
-
-p .parafooter ::first-letter {
-  color: yellowgreen;
-}
-
-.containt1 {
-  background-image: url("../image/Restaurant2.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.containt2 {
-  background-image: url("../image/chef2.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.containt3 {
-  background-image: url("../image/Evènement3.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.containt4 {
-  background-image: url("../image/Livraison1.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.containt5 {
-  background-image: url("../image/Réduction2.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.card1 {
-  background-image: url("../image/Evènement5.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
-.card2 {
-  background-image: url("../image/Evènement6.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
-.card3 {
-  background-image: url("../image/Evènement8.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
-.card4 {
-  background-image: url("../image/médaille.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
-.card5 {
-  background-image: url("../image/champagne.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
-.card6 {
-  background-image: url("../image/toplist.jpeg");
-  background-size: cover;
-  background-position: center;
+  background-color: yellow;
 }
 
 /*# sourceMappingURL=style.css.map */
