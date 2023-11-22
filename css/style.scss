@@ -4,8 +4,13 @@
 html{
   scroll-behavior: smooth;
 }
+div {
+  h1::first-letter {
+    color: greenyellow;
+  }
+}
 nav{
-  background-color: darkgreen;
+  background-color: black;
 }
 .nav-link{
   color:darkgreen;
@@ -13,6 +18,7 @@ nav{
 
   &:hover,&.actives{
     color: red !important;/* pour mettre une propriete en avant qu elle doit marcher*/
+    background-color: green;
   }
 
   &:visited{
@@ -24,5 +30,21 @@ nav{
   background-color: #002a00;
 }
 .c2{
-  background-color: yellow;
+  background-color: greenyellow;
+}
+.foot1{
+  text-decoration: none ;
+  color: black;
+}
+.fa-facebook,.fa-twitter,.fa-instagram{
+  transition: .5s;
+  color: black;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+p{
+  .parafooter ::first-letter{
+    color: yellowgreen;
+  }
 }

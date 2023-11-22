@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <title>GreenFood</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/blog.css">
-
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg shadow">
+<div style="background-color: rgb(213, 221, 219)">
+    <h1 class="text-center"> Green Food</h1>
+    <marquee behavior="" direction="left"><p class="display-7 text-center bg-light" style="font-family: 'lobster',sans-serif">Manger saine et équilibrer pour une meilleure vie et une santé de fer :)</p></marquee>
+</div>
+<nav class="navbar navbar-expand-lg shadow"style="font-family:'roboto',sans-serif">
     <div class="container-fluid">
-        <a class="navbar-brand "  href="#"><img src="../../image/logo.png" style="width:100px;height:70px;" alt=""></a>
+        <a class="navbar-brand "  href="#"><img src="../../image/Logo%202.png" style="width:100px;height:70px;" alt=""></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-4 mb-2 mb-lg-0 ">
-                <li class="nav-item ps-5 pe-2">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0 fs-5 ">
+                <li class="nav-item mx-2 px-2">
                     <a class="nav-link "  href="../../index.html">Accueil</a>
                 </li>
                 <div class="dropdown">
-                    <a class="nav-link dropdown-toggle" href="../menu/menu.html" data-bs-toggle="dropdown" aria-expanded="false">
-                        menu
+                    <a class="nav-link dropdown-toggle mx-2 px-2 text-light" href="../menu/menu.html" data-bs-toggle="dropdown" aria-expanded="false">
+                        La carte
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu opacity-75" style="background-color: dimgray">
                         <li><a class="dropdown-item" href="../menu/menu.html">Nos Entree et Apperitif</a></li>
                         <li><a class="dropdown-item" href="../menu/menu.html">Nos plats</a></li>
                         <li><a class="dropdown-item" href="../menu/menu.html">Nos desserts</a></li>
@@ -30,38 +37,92 @@
 
                     </ul>
                 </div>
-                <li class="nav-item px-2">
+                <li class="nav-item mx-2 px-2">
                     <a class="nav-link" href="../nos%20recettes/recettes.html">Nos recettes</a>
                 </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="#">Blog</a>
+                <li class="nav-item mx-2 px-2">
+                    <a class="nav-link text-light" href="#">Blog</a>
                 </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="../reservation/reservation.html">Reservation</a>
+                <li class="nav-item mx-2">
+                    <a class="nav-link px-2 " href="../reservation/reservation.html" style="background-color: rgb(18, 40, 2); color: white"">Reservation</a>
                 </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="../connexion/user.html">Se connecter</a>
-                </li>
-                <form class="d-flex position-relative" role="search">
+
+                <!--<form class="d-flex position-relative" role="search">
                     <input class="me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 50px">
                     <i class="fas fa-search position-absolute top-0 end-0 pe-3 py-3"></i>
-                </form>
+                </form>-->
             </ul>
-            <div class="dropdown ms-auto d-lg-block d-md-none ">
-                <button class="btn bg-white me-5 border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-user icon" ></i>
+
+            <a href="#"><i class="fas fa-search me-3"style="color: white"></i></a>
+            <a href="#"><i class="fa-solid fa-heart me-3" style="color: white"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping" style="color: white"></i></a>
+
+
+            <div class="dropdown  d-lg-block ">
+                <button class="btn me-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-user icon" style="color: white" ></i>
                 </button>
-                <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Se connecter</a></li>
-                    <li><a class="dropdown-item" href="#">Creer un compte</a></li>
+                <ul class="dropdown-menu opacity-75" style="background-color: dimgray">
+                    <li><a class="dropdown-item" href="../connexion/user.html">Connexion</a></li>
+                    <li><a class="dropdown-item" href="../inscription/inscription.html">S inscrire </a></li>
                 </ul>
             </div>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" style="background-color: white"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
 </nav>
-<p>votre blog</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt enim eos ipsam labore, necessitatibus sapiente velit voluptates voluptatum. A ab, architecto autem beatae deleniti dignissimos earum eum eveniet facilis fugiat harum illum natus necessitatibus neque nostrum officiis porro quas quibusdam quidem, ratione recusandae sequi, temporibus. A doloremque eius error facilis fugit hic, illum, in iste iusto maxime, minus omnis porro qui quia quo tempore totam vel vitae voluptate voluptatibus? A aperiam beatae commodi doloremque eligendi eveniet excepturi id molestias obcaecati omnis placeat quidem, quisquam vero vitae voluptas voluptatem voluptates. Ab aliquam asperiores est, excepturi nesciunt odit quia quis quod ullam? Amet, at atque, consectetur explicabo ipsa ipsam molestiae, nostrum quia quibusdam rem sapiente voluptatibus. Aliquam consequuntur esse illum odio unde voluptas, voluptate! Accusamus adipisci, amet assumenda aut, blanditiis cum debitis dignissimos distinctio dolorem dolores eius enim ex excepturi fugit iure laudantium molestiae nam nisi nostrum numquam pariatur perspiciatis porro quam quibusdam quo recusandae saepe sequi sit soluta suscipit vero, vitae voluptas voluptate. Assumenda consequuntur iste repellat. Animi dolor, eaque eum provident quaerat quo veritatis voluptate. Adipisci aliquid asperiores culpa debitis dicta ducimus eius ex incidunt, iste nemo, nesciunt, officiis optio porro sed soluta? Adipisci aperiam asperiores assumenda, atque consectetur corporis cum dicta id odit pariatur provident quae quisquam, tempora tempore velit voluptatem voluptatum. Adipisci architecto assumenda, beatae debitis doloremque, excepturi expedita in laboriosam molestias, officiis possimus sapiente voluptas! Aliquid ducimus eum facere pariatur quam quibusdam repellendus, sequi totam veniam. Accusamus animi architecto atque cupiditate debitis ea illo laborum modi pariatur, provident quasi quia recusandae reiciendis repellat reprehenderit sapiente ullam, voluptatum! Hic incidunt itaque nam officiis pariatur placeat, quae, quas rem sunt unde vel voluptatem? Alias asperiores atque corporis culpa cum cumque dolores, doloribus fuga inventore odit porro suscipit veniam. Doloribus, iusto magni nesciunt odit perferendis quaerat quisquam? A, alias aspernatur, assumenda consequuntur cum cupiditate deleniti dolore doloribus et ex fugiat impedit magnam molestiae, mollitia nesciunt nostrum possimus qui quidem quisquam sapiente sequi tempora veritatis! Aliquam amet cum delectus eligendi fugit harum, impedit laborum maiores nostrum numquam quibusdam quis quisquam rem repellat reprehenderit veritatis vitae? Aliquid atque blanditiis consequatur corporis deleniti dicta dolorem doloremque dolorum ducimus eius error eveniet exercitationem explicabo fugiat illum impedit incidunt ipsam iusto, laboriosam magni minus molestiae natus nihil nulla obcaecati officiis perspiciatis quas quibusdam quidem recusandae reiciendis repellat sapiente soluta suscipit veniam veritatis vitae! Animi, consectetur dolore earum eveniet ex excepturi laboriosam magnam natus non numquam quaerat qui quisquam reiciendis soluta tempore voluptas, voluptates. Accusantium atque consequatur ducimus enim expedita illo mollitia praesentium quia quo quod ratione tempora, tenetur, ullam! Aliquid, fuga ut. Ab animi corporis dolorum ducimus maiores numquam odio, odit perferendis quibusdam sunt. Animi aspernatur assumenda beatae commodi cupiditate doloremque est excepturi expedita fuga impedit incidunt, iusto laboriosam maiores minus odit perspiciatis porro ratione repellendus sed similique temporibus velit vitae! Animi autem beatae corporis culpa cum cupiditate delectus deserunt distinctio doloremque enim est eum id illum in ipsam iure laborum magnam, magni, maiores maxime nam necessitatibus nemo nisi numquam optio perspiciatis quasi, quo reprehenderit saepe tempora unde ut voluptatem voluptates. Amet architecto commodi consectetur, consequuntur deserunt dolorum, ea eum incidunt itaque laboriosam minus molestiae officiis optio quaerat quas quidem suscipit, tempora? Amet aperiam deserunt enim expedita hic laboriosam libero necessitatibus nisi nobis, numquam obcaecati odit praesentium quae qui quia sequi ullam vitae. Accusamus aperiam architecto dignissimos distinctio dolorem quisquam sunt. Dolorum, eaque earum modi nam nulla pariatur? Ad animi aspernatur illo laborum molestiae molestias necessitatibus placeat provident sed, voluptate. Doloribus eaque harum impedit laboriosam natus neque, non nulla? A consequatur cum eaque enim, eum, exercitationem harum illum laboriosam quae quam recusandae tempore! Accusamus ad alias architecto autem corporis cum debitis dolorem dolorum ducimus earum facere illum incidunt inventore nulla obcaecati officiis omnis pariatur reprehenderit sed tenetur, velit vero voluptate. Aspernatur autem debitis hic laborum magnam molestiae perspiciatis quos rerum suscipit veritatis. Consequatur facilis laudantium libero numquam. Accusamus animi aut consequatur doloremque dolores eius, eos eum illo iste minus officia quis quisquam sapiente sint voluptas! Aut consectetur fugiat maiores perferendis sequi veniam, voluptatibus. Ipsam minima quibusdam recusandae reprehenderit voluptatem. Accusantium aspernatur autem delectus deserunt dicta dignissimos dolorem doloribus esse eum eveniet facilis illum iure, laboriosam natus nesciunt nihil optio porro quam recusandae reiciendis repellat saepe sapiente soluta voluptas voluptatem! Adipisci aliquam consequuntur corporis cupiditate distinctio dolor doloribus ex facilis fuga id ipsa necessitatibus nemo nesciunt nisi nobis nostrum, odit officiis omnis perferendis perspiciatis porro quaerat qui recusandae repudiandae tempora temporibus velit, veniam, vero voluptas voluptatum! Ab aliquam architecto aspernatur assumenda beatae consequuntur deleniti enim expedita explicabo fuga in itaque magni modi, odio quasi qui quia quod ratione sapiente soluta sunt unde voluptatibus! Eos perferendis, praesentium. Autem commodi consequuntur delectus ex fuga molestias mollitia nostrum obcaecati quisquam, sint velit voluptatibus voluptatum! A accusantium alias delectus ducimus eligendi enim libero nisi optio reprehenderit sapiente? Accusantium adipisci aliquid asperiores atque cumque cupiditate debitis deserunt, dolorum enim error eum eveniet, fugit magni natus nobis nostrum placeat quae quaerat quam recusandae repellat saepe sed sint, sunt tenetur veniam voluptas? Aut dicta expedita non repellendus! Ad animi aperiam aspernatur consectetur consequuntur cumque cupiditate dicta dolor eius eveniet exercitationem explicabo facilis fuga hic ipsa iure minus nam nesciunt nostrum nulla numquam odit optio quas reiciendis rem repellendus, repudiandae rerum sapiente sed similique soluta tempora ullam velit. Ad blanditiis, cum cumque delectus, dolore eligendi eos excepturi exercitationem fuga fugiat illo inventore ipsa laboriosam minus non numquam, omnis porro possimus quia quis repudiandae rerum sapiente sed sint soluta tenetur totam velit. Accusamus atque, autem blanditiis corporis deserunt dolor doloribus earum error esse eveniet ipsa, laudantium libero minus nam non numquam odit pariatur possimus quas quo reiciendis repellendus repudiandae sunt veritatis voluptas voluptatibus voluptatum! Ad, aliquid cupiditate dolor explicabo nemo praesentium quas quidem quos. Eius eos similique sunt vitae! Deleniti eligendi obcaecati quia. Alias aut dolor dolore, eos eveniet illum iste, iusto laborum maxime odio quia quo quos reprehenderit vitae voluptatum! Accusamus, aliquam deleniti dolor et, ex hic, illo magni mollitia neque nihil non numquam odit omnis quasi reiciendis repudiandae sed suscipit temporibus voluptate voluptatibus.</p>
+<footer>
+    <div class="container-fluid"style="background-color: rgb(213, 221, 219)">
+        <div class="container">
+            <p class="display-4 pt-3 parafooter fw-bolder">GreenFood</p>
+            <div class="row">
+                <div class="col-lg-3 mt-3">
+                    <h2 class="fw-bold">Switcher entre les pages</h2>
+                    <p class="mb-2">
+                    <ul>
+                        <li class="foot"><a class="foot1"href="../../index.html"> Accueil</a></li>
+                        <li class="foot"><a class="foot1" href="../menu/menu.html"> Menu</a></li>
+                        <li class="foot"><a class="foot1"href="../blog/blog.html">Blog</a></li>
+                        <li class="foot"><a class="foot1"href="#"> Reservation</a></li>
+                        <li class="foot"><a class="foot1"href="../nos%20recettes/recettes.html">Nos recettes</a></li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-lg-3 mt-3">
+                    <h2 class="fw-bold">Localisation</h2>
+                    <p class="mb-5">
+                        Restaurant GreenFood bonapriso rue Dominque Savio
+                        Telephone:xxxxxxxxx
+                    </p>
+
+                </div>
+                <div class="col-lg-3">
+                    <h2 class="fw-bold">Horaires d ouverture</h2>
+                    <p class="mb-5">
+                        DEJEUNER <br>
+                        Lundi a Dimanche <br>
+                        Reservations de 7h a 23h <br>
+                        et le Dimanche de 7h 0 12h<br>
+
+                        DINER <br>
+                        Lundi a Samedi <br>
+                        Reservations de 12h a 20h30 <br>
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <h2 class="fw-bold">Nos reseaux sociaux</h2>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook  border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i></a>
+                    <a href="https://www.instagram"><i class="fa-brands fa-instagram border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
