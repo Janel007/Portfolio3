@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GreenFood restaurant</title>
+    <title>GreenFood Restaurant</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>GreenFood Restaurant</title>
     <link rel="icon" href="../../image/Logo%202.png">
@@ -10,109 +10,197 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/recettes.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-<div style="background-color: rgb(213, 221, 219)">
-    <h1 class="text-center"> Green Food</h1>
-    <marquee behavior="" direction="left"><p class="display-7 text-center bg-light" style="font-family: 'lobster',sans-serif">Manger saine et équilibrer pour une meilleure vie et une santé de fer :)</p></marquee>
-</div>
-<nav class="navbar navbar-expand-lg"  style="font-family:'roboto',sans-serif">
-    <div class="container-fluid">
-        <a class="navbar-brand "  href="#"><img src="../../image/Logo%202.png" style="width:100px;height:60px;" class="rounded mx-3" alt=""></a>
+<nav class="navbar navbar-expand-lg sticky-top"  style="font-family:'roboto',sans-serif">
+    <div class="container-fluid mt-2 mb-2">
+        <a class="navbar-brand"  href="../../index.html"><img src="../../image/Logo%208.png" style="width:100px;height:60px;" class="rounded mx-3" alt=""></a>
+        <section class="d-lg-none">
+            <a href="#"><i class="fas fa-search me-3"style="color: white"></i></a>
+            <a href="../inscription/inscription.html"> <i class="fa-solid fa-user icon mx-4" style="color: white" ></i></a>
+        </section>
+        <button class="navbar-toggler" type="button" style="background-color: white" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0 fs-5 ">
                 <li class="nav-item mx-2 px-2">
                     <a class="nav-link"  href="../../index.html">Accueil</a>
                 </li>
                 <div class="dropdown">
-                    <a class="nav-link dropdown-toggle" href="../menu/menu.html" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link  mx-2 px-2 dropdown-toggle text-light" href="../menu/menu.html" data-bs-toggle="dropdown" aria-expanded="false">
                         La carte
                     </a>
                     <ul class="dropdown-menu opacity-75" style="background-color: dimgray">
-                        <li><a class="dropdown-item" href="../menu/menu.html">Nos Entree et Apperitif</a></li>
-                        <li><a class="dropdown-item" href="../menu/menu.html">Nos plats</a></li>
-                        <li><a class="dropdown-item" href="../menu/menu.html">Nos desserts</a></li>
-                        <li><a class="dropdown-item" href="../menu/menu.html">Nos cocktails</a></li>
+                        <li><a class="dropdown-item" href="../menu/menu.html#Nos entrees et apperitifs">Nos Entrees et Appéritifs</a></li>
+                        <li><a class="dropdown-item" href="../menu/menu.html#Nos plats">Nos plats</a></li>
+                        <li><a class="dropdown-item" href="../menu/menu.html#Nos desserts">Nos desserts</a></li>
+                        <li><a class="dropdown-item" href="../menu/menu.html#Nos cocktails">Nos cocktails</a></li>
 
                     </ul>
                 </div>
                 <li class="nav-item px-2 mx-2">
-                    <a class="nav-link" href="#">Nos recettes</a>
+                    <a class="nav-link actives" href="#">Nos recettes</a>
                 </li>
                 <li class="nav-item mx-2 px-2">
-                    <a class="nav-link" href="../blog/blog.html">Blog</a>
+                    <a class="nav-link" href="../blog/blog.html">Actualités</a>
+                </li>
+                <li class="nav-item mx-2 px-2">
+                    <a class="nav-link" href="../New%20blog/new_blog.html">Blog</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link  px-2" href="../reservation/reservation.html" style="background-color: rgb(18, 40, 2); color: white">Reservation</a>
+                    <a class="nav-link  px-2" href="../reservation/reservation.html">Réservation</a>
                 </li>
-                <!-- <form class="d-flex position-relative" role="search">
-                     <input class="me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 50px">
-                     <i class="fas fa-search position-absolute top-0 end-0 pe-3 py-3"></i>
-                 </form>-->
             </ul>
-
-            <a href="#"><i class="fas fa-search me-3"style="color: white"></i></a>
-            <a href="#"><i class="fa-solid fa-heart me-3" style="color: white"></i></a>
-            <a href="#"><i class="fa-solid fa-cart-shopping" style="color: white"></i></a>
-
-
-            <div class="dropup  d-lg-block ">
-                <button class="btn me-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-user icon" style="color: white" ></i>
-                </button>
-                <ul class="dropdown-menu opacity-75" style="background-color: dimgray">
-                    <li><a class="dropdown-item text-black" href="../connexion/user.html">Connexion</a></li>
-                    <li><a class="dropdown-item text-black" href="../inscription/inscription.html">S incrire</a></li>
-                </ul>
-            </div>
+            <section class="d-none d-md-none d-lg-block">
+                <button type="submit" style="background-color: transparent;border: none"><a href="#"><i class="fas fa-search me-3"style="color: white"></i></a></button>
+                <a href="../inscription/inscription.html"> <i class="fa-solid fa-user icon mx-4" style="color: white" ></i></a>
+            </section>
         </div>
-        <button class="navbar-toggler" type="button" style="background-color: white" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+
     </div>
 </nav>
-<p>mes recettes</p>
+<main class="container-fluid">
+    <section class="container">
+
+        <p class="fs-1 fw-bold shadow mt-5 p-2 text-center bg-success-subtle" style="text-decoration: underline"> ~Découvrez nos différentes récettes Végan~</p>
+        <p class="text-center display-6"> Que vous soyez cuisinier(e) amateur, gourmet en devenir, ou futur(e), les récettes Greenfood à table ont été pensées pour vous, quelque soit votre niveau.
+            De l’apéro le plus facile, au dessert le plus savoureux, qui vous fera passer pour le prochain grand chef cuisinier, découvrez ici toutes les recettes des magazines GreenFood à table qui vont éblouir vos papilles et votre tablée. Bon appétit! :)</p>
+        <h2 class="text-success">Entrées</h2>
+        <div class="row justify-content-around">
+            <div class="col-md-6 col-lg-3">
+                <a href="apperetif_bouchee.html"><img src="../../image/plats/entre1.jpeg" style="height: 220px; width: 320px" class="im1"></a> <br>
+                <a href="apperetif_bouchee.html"style="text-decoration: none; color:black" class="text-center">Apperitifs et bouchées</a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="tartinade.html"><img src="../../image/plats/entre3.jpeg" class="im1" style="height: 220px; width: 320px"></a> <br>
+                <a href="tartinade.html"style="text-decoration: none;color:black; text-align: center" class="text-center">Les tartinades</a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="terrines.html"><img src="../../image/plats/entre5.jpeg" class="im1" style="height: 220px; width: 320px"></a> <br>
+                <a href="terrines.html"style="text-decoration: none; color:black; text-align: center" class="text-center">Les terrines</a>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-md-6 col-lg-3">
+                <a href="soupe.html"><img src="../../image/plats/entre4.jpeg" class="im1" style="height: 220px;width: 320px"></a> <br>
+                <a href="soupe.html"style="text-decoration: none;color:black; text-align: center" class="text-center">Les soupes</a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="salade.html"><img src="../../image/plats/entre2.webp" class="im1" style="height: 220px;width: 320px"></a> <br>
+                <a href="salade.html"style="text-decoration: none;color:black; text-align: center" class="text-center">Salade</a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="grillade.html"><img src="../../image/plats/grillade.jpeg" class="im1" style="height: 220px;width:320px"></a> <br>
+                <a href="grillade.html"style="text-decoration: none;color:black; text-align: center" class="text-center">Les grillades</a>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-3">
+        <h2 class="text-success mt-5 pt-4">Plats</h2>
+        <div class="row">
+            <div class="col g-1">
+                <a href="plat_traditionnels.html"><img src="../../image/plats2/repas5.jpeg"style="height: 220px;width: 320px" class="im1"></a> <br>
+                <a href="plat_traditionnels.html"style="text-decoration: none;color:black" class="text-center">Plats tradiitionnels</a>
+            </div>
+
+            <div class="col g-1">
+                <a href="plats_complets.html"><img src="../../image/plats/Plat végan3.jpeg" class="im1" style="height: 220px;width: 320px"></a> <br>
+                <a href="plats_complets.html"style="text-decoration: none;color:black; text-align: center" class="text-center">Plats complets</a>
+            </div>
+
+            <div class="col g-1">
+                <a href="legumes.html"><img src="../../image/plats/accomp.jpeg" class="im1" style="height: 220px;width: 320px"></a> <br>
+                <a href="legumes.html"style="text-decoration: none;color:black; text-align: center" class="text-center">Legumes et accompagnements</a>
+            </div>
+
+            <div class="col g-1">
+                <a href="ble.html"><img src="../../image/plats/Plat végan1.jpeg" class="im1" style="height: 220px;width: 320px"></a> <br>
+                <a href="ble.html"style="text-decoration: none;color:black; text-align: center" class="text-center">Pates, riz et fastfood</a>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-3">
+        <h2 class="text-success g-3 mt-5">Desserts</h2>
+        <div class="row justify-content-evenly">
+            <div class="col">
+                <a href="tartes_gateaux.html"><img src="../../image/plats/dessert1.jpeg" style="height: 220px;width: 320px" class="im1"></a> <br>
+                <a href="tartes_gateaux.html"style="text-decoration: none;color:black" class="text-center">Gateaux et tartes</a>
+            </div>
+            <div class="col">
+                <a href="biscuit.html"><img src="../../image/plats/biscui1.jpeg" class="im1" style="height: 220px;width: 320px"></a> <br>
+                <a href="biscuit.html"style="text-decoration: none;color:black; text-align: center" class="text-center">biscuits</a>
+            </div>
+            <div class="col">
+                <a href="glaces.html"><img src="../../image/plats/glace1.jpeg" class="im1" style="height: 220px;width: 320px"></a> <br>
+                <a href="glaces.html"style="text-decoration: none;color:black; text-align: center" class="text-center">Glaces</a>
+            </div>
+            <div class="col">
+                <a href="verrines.html"><img src="../../image/plats/verrine1.jpeg" class="im1" style="height: 220px;width:320px"></a> <br>
+                <a href="verrines.html"style="text-decoration: none;color:black; text-align: center" class="text-center">verrines</a>
+            </div>
+            <div class="col">
+                <a href="fruit.html"><img src="../../image/plats/fruit1.jpeg" class="im1" style="height: 220px;width:320px"></a> <br>
+                <a href="fruit.html"style="text-decoration: none;color:black; text-align: center" class="text-center">fruits</a>
+            </div>
+            <div class="col">
+                <a href="pains.html"><img src="../../image/plats/pain1.jpeg" class="im1" style="height: 220px;width:320px"></a> <br>
+                <a href="pains.html"style="text-decoration: none;color:black; text-align: center" class="text-center">Pains</a>
+            </div>
+        </div>
+    </section>
+    <section class="mt-3 container">
+        <h2 class="text-success g-3">Cocktails</h2>
+        <div class="row">
+            <div class="col">
+                <a href="cocktail.html"><img src="../../image/cocktail5.jpeg" style="height: 220px;width: 320px" class="im1"></a> <br>
+                <a href="cocktail.html"style="text-decoration: none;color:black" class="text-center">Coctails sans alcools</a>
+            </div>
+        </div>
+    </section>
+</main>
 <footer>
-    <div class="container-fluid"style="background-color: rgb(213, 221, 219)">
+    <div class="container-fluid bg-success-subtle mt-5">
         <div class="container">
             <p class="display-4 pt-3 parafooter fw-bolder">GreenFood</p>
             <div class="row">
                 <div class="col-lg-3 mt-3">
-                    <h2 class="fw-bold">Switcher entre les pages</h2>
+                    <h4 class="fw-bold">Switcher entre les pages</h4>
                     <p class="mb-2">
                     <ul>
                         <li class="foot"><a class="foot1"href="../../index.html"> Accueil</a></li>
                         <li class="foot"><a class="foot1" href="../menu/menu.html"> Menu</a></li>
-                        <li class="foot"><a class="foot1"href="../blog/blog.html">Blog</a></li>
-                        <li class="foot"><a class="foot1"href="#"> Reservation</a></li>
-                        <li class="foot"><a class="foot1"href="../nos%20recettes/recettes.html">Nos recettes</a></li>
+                        <li class="foot"><a class="foot1"href="../blog/blog.html">Actualités</a></li>
+                        <li class="foot"><a class="foot1"href="../New%20blog/new_blog.html">Blog</a></li>
+                        <li class="foot"><a class="foot1"href="../reservation/reservation.html"> Reservation</a></li>
+                        <li class="foot"><a class="foot1"href="#">Nos recettes</a></li>
                     </ul>
                     </p>
                 </div>
                 <div class="col-lg-3 mt-3">
-                    <h2 class="fw-bold">Localisation</h2>
+                    <h4 class="fw-bold">Localisation</h4>
                     <p class="mb-5">
-                        Restaurant GreenFood bonapriso rue Dominque Savio
+                        Restaurant GreenFood bonapriso rue Dominque Savio <br>
                         Telephone:xxxxxxxxx
                     </p>
 
                 </div>
                 <div class="col-lg-3">
-                    <h2 class="fw-bold">Horaires d ouverture</h2>
+                    <h4 class="fw-bold">Horaires d ouverture</h4>
                     <p class="mb-5">
                         DEJEUNER <br>
                         Lundi a Dimanche <br>
-                        Reservations de 7h a 23h <br>
+                        Réservations de 7h a 23h <br>
                         et le Dimanche de 7h 0 12h<br>
 
                         DINER <br>
                         Lundi a Samedi <br>
-                        Reservations de 12h a 20h30 <br>
+                        Réservations de 12h a 20h30 <br>
                     </p>
                 </div>
                 <div class="col-lg-3">
-                    <h2 class="fw-bold">Nos reseaux sociaux</h2>
+                    <h4 class="fw-bold">Nos réseaux sociaux</h4>
                     <a href="https://www.facebook.com"><i class="fa-brands fa-facebook  border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i></a>
                     <a href="https://www.twitter.com"><i class="fa-brands fa-twitter border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i></a>
                     <a href="https://www.instagram"><i class="fa-brands fa-instagram border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i>
@@ -122,7 +210,11 @@
         </div>
     </div>
 </footer>
+
+<script src="../../js/index.js"></script>
+<script src="../../js/jquery.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </body>
 </html>

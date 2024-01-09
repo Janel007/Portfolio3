@@ -10,111 +10,429 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
 </head>
 <body>
-<div style="background-color: rgb(213, 221, 219)">
-    <h1 class="text-center"> Green Food</h1>
-    <marquee behavior="" direction="left"><p class="display-7 text-center bg-light" style="font-family: 'lobster',sans-serif">Manger saine et équilibrer pour une meilleure vie et une santé de fer :)</p></marquee>
-</div>
-<nav class="navbar navbar-expand-lg" style="font-family:'roboto',sans-serif">
-    <div class="container-fluid">
-        <a class="navbar-brand "  href="#"><img src="../../image/Logo%202.png" style="width:100px;height:60px;" class="rounded mx-3" alt=""></a>
+<nav class="navbar navbar-expand-lg sticky-top" style="font-family:'roboto',sans-serif">
+    <div class="container-fluid mt-2 mb-2">
+        <a class="navbar-brand"  href="../../index.html"><img src="../../image/Logo%208.png" style="width:100px;height:60px;" class="rounded mx-3" alt=""></a>
+        <section class="d-lg-none ">
+            <a href="#"><i class="fas fa-search me-3"style="color: white"></i></a>
+            <a href="../inscription/inscription.html"> <i class="fa-solid fa-user icon mx-4" style="color: white"></i></a>
+        </section>
+        <button class="navbar-toggler" type="button" style="background-color: white" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0 fs-5 ">
                 <li class="nav-item mx-2 px-2">
-                    <a class="nav-link " aria-current="page" href="../../index.html">Accueil</a>
+                    <a class="nav-link" aria-current="page" href="../../index.html">Accueil</a>
                 </li>
                 <div class="dropdown">
-                    <a class="nav-link  mx-2 px-2 dropdown-toggle text-light" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                      La carte
+                    <a class="nav-link actives mx-2 px-2 dropdown-toggle text-light" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                      La Carte
                     </a>
                     <ul class="dropdown-menu opacity-75" style="background-color: dimgray">
-                        <li><a class="dropdown-item" href="../menu/menu.html">Nos Entrees et Apperitifs</a></li>
-                        <li><a class="dropdown-item" href="../menu/menu.html">Nos plats</a></li>
-                        <li><a class="dropdown-item" href="../menu/menu.html">Nos desserts</a></li>
-                        <li><a class="dropdown-item" href="../menu/menu.html">Nos cocktails</a></li>
+                        <li><a class="dropdown-item" href="#Nos entrees et apperitifs">Nos Entrées et Appéritifs</a></li>
+                        <li><a class="dropdown-item" href="#Nos plats">Nos Plats</a></li>
+                        <li><a class="dropdown-item" href="#Nos desserts">Nos Desserts</a></li>
+                        <li><a class="dropdown-item" href="#Nos cocktails">Nos Cocktails</a></li>
 
                     </ul>
                 </div>
                 <li class="nav-item mx-2 px-2">
-                    <a class="nav-link" href="../nos%20recettes/recettes.html">Nos recettes</a>
+                    <a class="nav-link" href="../nos%20recettes/recettes.html">Nos Récettes</a>
                 </li>
                 <li class="nav-item mx-2 px-2">
-                    <a class="nav-link" href="../blog/blog.html">Blog</a>
+                    <a class="nav-link" href="../blog/blog.html">Actualités</a>
+                </li>
+                <li class="nav-item mx-2 px-2">
+                    <a class="nav-link" href="../New%20blog/new_blog.html">Blog</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link px-2" href="../reservation/reservation.html"style="background-color: rgb(18, 40, 2); color: white">Reservation</a>
+                    <a class="nav-link px-2" href="../reservation/reservation.html">Réservation</a>
                 </li>
 
-               <!-- <form class="d-flex position-relative" role="search">
-                    <input class="me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 50px">
-                    <i class="fas fa-search position-absolute top-0 end-0 pe-3 py-3"></i>
-                </form>-->
             </ul>
 
-
-            <a href="#"><i class="fas fa-search me-3"style="color: white"></i></a>
-            <a href="#"><i class="fa-solid fa-heart me-3" style="color: white"></i></a>
-            <a href="#"><i class="fa-solid fa-cart-shopping" style="color: white"></i></a>
-
-            <div class="dropup  d-lg-block ">
-                <button class="btn me-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-user icon" style="color: white"></i>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../connexion/user.html">Se connecter</a></li>
-                    <li><a class="dropdown-item" href="../inscription/inscription.html">S incrire</a></li>
-                </ul>
-            </div>
+            <section class="d-none d-md-none d-lg-block">
+                <a href="#"><i class="fas fa-search me-3"style="color: white"></i></a>
+                <a href="../inscription/inscription.html"> <i class="fa-solid fa-user icon mx-4" style="color: white" ></i></a>
+            </section>
         </div>
-        <button class="navbar-toggler" type="button" style="background-color: white" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
     </div>
 </nav>
-<p>bonjour menu</p>
-<footer>
+<div class="container">
+    <h1 class="display-5 mb-4" style="font-family:'Lobster',sans-serif; text-align: center;margin-top: 50px;text-decoration: underline">Les délices du Green Food <i class="fa-solid fa-seedling"></i></h1>
+    <p style="font-family: 'lobster',sans-serif; text-decoration: underline; text-align: center"class="fs-2 shadow mt-3 p-2 text-center bg-success-subtle" id="Nos entrees et apperitifs">Nos entrées et appéritifs</p>
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-3" style="max-width: 540px; border: none">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <a href="../nos%20recettes/salade9.html">
+                            <img src="../../image/entree%20et%20apperitif/galettes-courgette-tofu.jpg" class="img-fluid im1" style="border-radius: 100%;">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <a href="../nos%20recettes/salade9.html" style="text-decoration: none;color: darkgreen"><h5 class="card-title im1">Galette courgette et tofu</h5></a>
+                            <p class="card-text">Galette courgette et tofu, tomates, olives kalamata, herbes fraiches et vinaigrette au citron confit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-3" style="max-width: 540px; border: none">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <a href="../nos%20recettes/salade2.html">
+                            <img src="../../image/entree%20et%20apperitif/salade3.jpeg" class="img-fluid im1" style="border-radius: 100%">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <a href="../nos%20recettes/salade2.html" style="text-decoration: none;color: darkgreen"><h5 class="card-title im1">Salade avalanche</h5></a>
+                            <p class="card-text">Salade faite aux poids chiches avec concombre, poivrons, menthe fraiches, des graines chia et 1/2 citron...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-3" style="max-width: 540px; border: none">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <a href="../nos%20recettes/salade1.html">
+                            <img src="../../image/entree%20et%20apperitif/salade2.jpeg" class="img-fluid im1" style="border-radius: 100%">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <a href="../nos%20recettes/salade1.html" style="text-decoration: none;color: darkgreen"><h5 class="card-title im1">Salade de poids chiche</h5></a>
+                            <p class="card-text">En entrée toute simple, qui pourrait presque servir de salade d'été en augmentant les quantités</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-3" style="max-width: 540px; border: none">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <a href="../nos%20recettes/salade3.html">
+                            <img src="../../image/entree%20et%20apperitif/entree2.jpeg" class="img-fluid im1" style="border-radius: 100%">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <a href="../nos%20recettes/salade3.html" style="text-decoration: none;color: darkgreen"><h5 class="card-title im1">Socca niçoise (galette à la farine de pois chiches)</h5></a>
+                            <p class="card-text">La socca niçoise faite avec de la farine de poids chiches, huile d'olives fruitée, du poivre</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-3" style="max-width: 540px; border: none">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <a href="../nos%20recettes/salade4.html">
+                            <img src="../../image/entree%20et%20apperitif/entree3.jpeg" class="img-fluid im1" style="border-radius: 100%">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <a href="../nos%20recettes/salade4.html" style="text-decoration: none;color: darkgreen"><h5 class="card-title im1">Muffins tomate confite et basilic</h5></a>
+                            <p class="card-text">Cette recette vegan de muffins à la tomate confite et au basilic, idéale pour un appéritif dînatoire, vous transportera en Italie. Savoureuse, parfumée, gourmande et vegan. À faire absolument! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-3" style="max-width: 540px; border: none">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <a href="../nos%20recettes/salade5.html">
+                            <img src="../../image/entree%20et%20apperitif/salade4.jpeg" class="img-fluid im1" style="border-radius: 100%;">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <a href="../nos%20recettes/salade5.html" style="text-decoration: none;color: darkgreen"><h5 class="card-title im1">Salade Fusion Sésame</h5></a>
+                            <p class="card-text">
+                                Salade fusion de sésame Crudessence associe du tempeh de lupin, du riz brun, de la laitue, des graines de sésame, des carottes et du chou rouge pour vous offrir un repas sur le pouce délicieux et nourrissant.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="fs-2 shadow mt-3 p-2 text-center bg-success-subtle" style="text-align: center;font-family: 'lobster',sans-serif; text-decoration: underline" id="Nos plats">Nos plats</p>
+     <div class="row mx-4">
+         <div class="col-lg-4 col-md-6">
+             <div class="card mb-3" style="max-width: 540px; border: none">
+                 <div class="row g-0">
+                     <div class="col-md-4">
+                         <a href="../nos%20recettes/sangha.html">
+                             <img src="../../image/plats2/repas5.jpeg" class="img-fluid im1" style="border-radius: 100%;">
+                         </a>
+                     </div>
+                     <div class="col-md-8">
+                         <div class="card-body">
+                             <a href="../nos%20recettes/sangha.html" style="text-decoration: none;color: darkgreen"><h5 class="card-title im1">Sangha 2.0</h5></a>
+                             <p class="card-text">Sangha faite a base de mais frais, de legumes, d'huile de palme et de sucre selon sa convenance</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="card mb-3" style="max-width: 540px; border: none">
+                 <div class="row g-0">
+                     <div class="col-md-4">
+                         <a href="../nos%20recettes/pilee_pomme.html">
+                             <img src="../../image/plats2/repas6.jpeg" class="img-fluid im1" style="border-radius: 100%; width: 130px; height: 130px;">
+                         </a>
+                     </div>
+                     <div class="col-md-8">
+                         <div class="card-body">
+                             <a href="../nos%20recettes/pilee_pomme.html" style="text-decoration: none; color: darkgreen"><h5 class="card-title im1">Pommes pilées</h5></a>
+                             <p class="card-text">
+                              Les pommes pilées faites à base de pommes farineuses, d'huile de palme, de haricot, et d'oignon
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="card mb-3" style="max-width: 540px; border: none">
+                 <div class="row g-0">
+                     <div class="col-md-4">
+                         <a href="../nos%20recettes/koki.html">
+                             <img src="../../image/plats2/repas18.jpeg" class="img-fluid im1" style="border-radius: 100%; width: 130px; height: 130px;">
+                         </a>
+                     </div>
+                     <div class="col-md-8">
+                         <div class="card-body">
+                             <a href="../nos%20recettes/pilee_pomme.html" style="text-decoration: none;color: darkgreen"><h5 class="card-title im1">Koki</h5></a>
+                             <p class="card-text">
+                                 Le Koki est une préparation épicée à base de haricots et d'huile de palme. Il est issu de l'Ouest et du Littoral du Cameroun.
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="card mb-3" style="max-width: 540px; border: none">
+                 <div class="row g-0">
+                     <div class="col-md-4">
+                         <a href="../nos%20recettes/okok.html">
+                             <img src="../../image/plats2/repas4.jpeg" class="img-fluid im1" style="border-radius: 100%;">
+                         </a>
+                     </div>
+                     <div class="col-md-8">
+                         <div class="card-body">
+                             <a href="../nos%20recettes/okok.html" style="text-decoration: none;color: darkgreen"><h5 class="card-title im1">Okok eton</h5></a>
+                             <p class="card-text">
+                               L'okok est une recette issue du centre, faite de noix, d'arachide, et de feuille d'okok
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="card mb-3" style="max-width: 540px; border: none">
+                 <div class="row g-0">
+                     <div class="col-md-4">
+                         <a href="../nos%20recettes/konthap.html">
+                             <img src="../../image/plats2/repas16.jpeg" class="img-fluid im1" style="border-radius: 100%; width: 130px; height: 130px;">
+                         </a>
+                     </div>
+                     <div class="col-md-8">
+                         <div class="card-body">
+                             <a href="../nos%20recettes/konthap.html" style="text-decoration: none;color: darkgreen"><h5 class="card-title im1">Corn Tchap</h5></a>
+                             <p class="card-text">
+                                 Fait à base de haricots (rouge de préférence), de maïs et de poisson fumé, cette recette très prisée est aussi très savoureuse.</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="card mb-3" style="max-width: 540px; border: none">
+                 <div class="row g-0">
+                     <div class="col-md-4">
+                         <a href="../nos%20recettes/tenu_millitaire.html">
+                             <img src="../../image/plats2/repas17.jpeg" class="img-fluid im1" style="border-radius: 100%; width: 130px; height: 130px;">
+                         </a>
+                     </div>
+                     <div class="col-md-8">
+                         <div class="card-body">
+                             <a href="../nos%20recettes/tenu_millitaire.html" style="text-decoration: none;color: darkgreen"><h5 class="card-title im1">Tenue millitaire</h5></a>
+                             <p class="card-text">
+                                 Un repas originaire de l'ouest du Cameroun. C'est un mélange de mais frais, de feuilles de macabo, et d'huile rouge
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+    <p class="fs-2 shadow mt-3 p-2 text-center bg-success-subtle" style="text-align: center;font-family: 'lobster',sans-serif; text-decoration: underline" id="Nos desserts"> Nos desserts</p>
+     <div class="row mx-4">
+         <div class="col-lg-4 col-md-6">
+                 <div class="card mb-3" style="max-width: 540px; border: none">
+                     <div class="row g-0">
+                         <div class="col-md-4">
+                             <a href="../nos%20recettes/fruit.html">
+                                 <img src="../../image/plats/fruit1.jpeg" class="img-fluid im1" style="border-radius: 100%;">
+                             </a>
+                         </div>
+                         <div class="col-md-8">
+                             <div class="card-body">
+                                 <a href="../nos%20recettes/fruit.html" style="text-decoration: none;color: darkgreen"><h5 class="card-title im1">Desserts aux fruits</h5></a>
+                                 <p class="card-text">
+                                     rien que du frais dans vos assiettes
+                                 </p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         <div class="col-lg-4 col-md-6">
+                 <div class="card mb-3" style="max-width: 540px; border: none">
+                     <div class="row g-0">
+                         <div class="col-md-4">
+                             <a href="../nos%20recettes/terrines.html">
+                                 <img src="../../image/plats/verrine2.jpeg" class="img-fluid im1" style="border-radius: 100%; width: 140px; height: 140px;">
+                             </a>
+                         </div>
+                         <div class="col-md-8">
+                             <div class="card-body">
+                                 <a href="../nos%20recettes/terrines.html" style="text-decoration: none;color: darkgreen"><h5 class="card-title im1">Verrine speculos</h5></a>
+                                 <p class="card-text">
+                                     Avec beaucoup de chocolat et de lait
+                                 </p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         <div class="col-lg-4 col-md-6">
+             <div class="card mb-3" style="max-width: 540px; border: none">
+                 <div class="row g-0">
+                     <div class="col-md-4">
+                         <a href="../nos%20recettes/terrines.html">
+                             <img src="../../image/plats/Dessert-mangue.jpeg" class="img-fluid im1" style="border-radius: 100%; width: 140px; height: 140px;">
+                         </a>
+                     </div>
+                     <div class="col-md-8">
+                         <div class="card-body">
+                             <a href="../nos%20recettes/terrines.html" style="text-decoration: none;color: darkgreen"><h5 class="card-title im1">Panna Cotta à la Mangue</h5></a>
+                             <p class="card-text">
+                                 Une crème mousseuse entière de mangue pour vos papilles
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+    </div>
+     <p style="font-family: 'lobster',sans-serif; text-decoration: underline" id="Nos cocktails"class="fs-2 shadow mt-3 p-2 text-center bg-success-subtle">Nos Cocktails</p>
+     <div class="row">
+         <div class="col-lg-4 col-md-6">
+                <div class="card mb-3" style="max-width: 540px; border: none">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <a href="../nos%20recettes/cocktail1.html">
+                                <img src="../../image/cocktail5.jpeg" class="img-fluid im1" style="border-radius: 100%; width: 140px; height: 140px;">
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <a href="../nos%20recettes/cocktail1.html" style="text-decoration: none;color: darkgreen"><h5 class="card-title im1">Coctail sans alcool au pamplemousse</h5></a>
+                                <p class="card-text">
+                                    Une recette healthy de cocktail maison sans alcool au pamplemousse. Une boisson rafraîchissante à base d’eau gazeuse pour se faire plaisir cet été !
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         <div class="col-lg-4 col-md-6">
+                <div class="card mb-3" style="max-width: 540px; border: none">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <a href="../nos%20recettes/cocktail2.html">
+                                <img src="../../image/cocktail11.jpeg" class="img-fluid im1" style="border-radius: 100%; width: 140px; height: 140px;">
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <a href="../nos%20recettes/cocktail2.html" style="text-decoration: none;color: darkgreen;"><h5 class="card-title im1">cocktail alcoolise au pamplemousse</h5></a>
+                                <p class="card-text">
+                                    Une recette healthy de cocktail maison sans alcool au pamplemousse. Une boisson rafraîchissante à base d’eau gazeuse pour se faire plaisir cet été !
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     </div>
+
+</div>
+
+<footer class="mt-5">
     <div class="container-fluid"style="background-color: rgb(213, 221, 219)">
         <div class="container">
             <p class="display-4 pt-3 parafooter fw-bolder">GreenFood</p>
             <div class="row">
                 <div class="col-lg-3 mt-3">
-                    <h2 class="fw-bold">Switcher entre les pages</h2>
+                    <h5 class="fw-bold">Switcher entre les pages</h5>
                     <p class="mb-2">
                     <ul>
                         <li class="foot"><a class="foot1"href="../../index.html"> Accueil</a></li>
-                        <li class="foot"><a class="foot1" href="../menu/menu.html"> Menu</a></li>
-                        <li class="foot"><a class="foot1"href="../blog/blog.html">Blog</a></li>
-                        <li class="foot"><a class="foot1"href="#"> Reservation</a></li>
+                        <li class="foot"><a class="foot1" href="#">Menu</a></li>
+                        <li class="foot"><a class="foot1"href="../blog/blog.html">Actualités</a></li>
+                        <li class="foot"><a class="foot1"href="../New%20blog/new_blog.html">Blog</a></li>
+                        <li class="foot"><a class="foot1"href="../reservation/reservation.html">Réservation</a></li>
                         <li class="foot"><a class="foot1"href="../nos%20recettes/recettes.html">Nos recettes</a></li>
                     </ul>
                     </p>
                 </div>
                 <div class="col-lg-3 mt-3">
-                    <h2 class="fw-bold">Localisation</h2>
-                    <p class="mb-5">
-                        Restaurant GreenFood bonapriso rue Dominque Savio
+                    <h5 class="fw-bold">Localisation</h5>
+                    <p class="mb-2">
+                        Restaurant GreenFood bonapriso rue Dominque Savio <br>
                         Telephone:xxxxxxxxx
                     </p>
 
                 </div>
-                <div class="col-lg-3">
-                    <h2 class="fw-bold">Horaires d ouverture</h2>
-                    <p class="mb-5">
+                <div class="col-lg-3 mt-3">
+                    <h5 class="fw-bold">Horaires d ouverture</h5>
+                    <p class="mb-2">
                         DEJEUNER <br>
                         Lundi a Dimanche <br>
                         Reservations de 7h a 23h <br>
-                        et le Dimanche de 7h 0 12h<br>
-
                         DINER <br>
                         Lundi a Samedi <br>
                         Reservations de 12h a 20h30 <br>
                     </p>
                 </div>
-                <div class="col-lg-3">
-                    <h2 class="fw-bold">Nos reseaux sociaux</h2>
+                <div class="col-lg-3 mt-3">
+                    <h5 class="fw-bold">Nos reseaux sociaux</h5>
                     <a href="https://www.facebook.com"><i class="fa-brands fa-facebook  border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i></a>
                     <a href="https://www.twitter.com"><i class="fa-brands fa-twitter border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i></a>
                     <a href="https://www.instagram"><i class="fa-brands fa-instagram border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i>
@@ -124,6 +442,9 @@
         </div>
     </div>
 </footer>
+
+<script src="../../js/index.js"></script>
+<script src="../../js/jquery.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>

@@ -2,66 +2,369 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GreenFood</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/blog.css">
+    <title>GreenFood Restaurant</title>
+    <link rel="icon" href="../../image/Logo%202.png">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/style.css">
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg shadow">
-    <div class="container-fluid">
-        <a class="navbar-brand "  href="#"><img src="../../image/logo.png" style="width:100px;height:70px;" alt=""></a>
+<nav class="navbar navbar-expand-lg sticky-top" style="font-family:'roboto',sans-serif">
+    <div class="container-fluid mt-2 mb-2">
+        <a class="navbar-brand"  href="../../index.html"><img src="../../image/Logo%208.png" style="width:100px;height:60px;" class="rounded mx-3" alt=""></a>
+        <section class="d-lg-none ">
+            <a href="#"><i class="fas fa-search me-3"style="color: white"></i></a>
+            <a href="../inscription/inscription.html"> <i class="fa-solid fa-user icon mx-4" style="color: white"></i></a>
+        </section>
+        <button class="navbar-toggler" type="button" style="background-color: white" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-4 mb-2 mb-lg-0 ">
-                <li class="nav-item ps-5 pe-2">
-                    <a class="nav-link "  href="../../index.html">Accueil</a>
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0 fs-5 ">
+                <li class="nav-item mx-2 px-2">
+                    <a class="nav-link " aria-current="page" href="../../index.html">Accueil</a>
                 </li>
                 <div class="dropdown">
-                    <a class="nav-link dropdown-toggle" href="../menu/menu.html" data-bs-toggle="dropdown" aria-expanded="false">
-                        menu
+                    <a class="nav-link  mx-2 px-2 dropdown-toggle text-light" href="../menu/menu.html" data-bs-toggle="dropdown" aria-expanded="false">
+                        La Carte
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../menu/menu.html">Nos Entree et Apperitif</a></li>
-                        <li><a class="dropdown-item" href="../menu/menu.html">Nos plats</a></li>
-                        <li><a class="dropdown-item" href="../menu/menu.html">Nos desserts</a></li>
-                        <li><a class="dropdown-item" href="../menu/menu.html">Nos cocktails</a></li>
+                    <ul class="dropdown-menu opacity-75" style="background-color: dimgray">
+                        <li><a class="dropdown-item" href="../menu/menu.html#Nos entrees et apperitifs">Nos Entrées et Appéritifs</a></li>
+                        <li><a class="dropdown-item" href="../menu/menu.html#Nos plats">Nos Plats</a></li>
+                        <li><a class="dropdown-item" href="../menu/menu.html#Nos desserts">Nos Desserts</a></li>
+                        <li><a class="dropdown-item" href="../menu/menu.html#Nos cocktails">Nos Cocktails</a></li>
 
                     </ul>
                 </div>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="../nos%20recettes/recettes.html">Nos recettes</a>
+                <li class="nav-item mx-2 px-2">
+                    <a class="nav-link" href="../nos%20recettes/recettes.html">Nos Récettes</a>
                 </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="#">Blog</a>
+                <li class="nav-item mx-2 px-2">
+                    <a class="nav-link actives" href="../blog/blog.html">Actualités</a>
                 </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="../reservation/reservation.html">Reservation</a>
+                <li class="nav-item mx-2 px-2">
+                    <a class="nav-link" href="../New%20blog/new_blog.html">Blog</a>
                 </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="../connexion/user.html">Se connecter</a>
+                <li class="nav-item mx-2">
+                    <a class="nav-link px-2" href="../reservation/reservation.html">Réservation</a>
                 </li>
-                <form class="d-flex position-relative" role="search">
-                    <input class="me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 50px">
-                    <i class="fas fa-search position-absolute top-0 end-0 pe-3 py-3"></i>
-                </form>
             </ul>
-            <div class="dropdown ms-auto d-lg-block d-md-none ">
-                <button class="btn bg-white me-5 border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-user icon" ></i>
-                </button>
-                <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Se connecter</a></li>
-                    <li><a class="dropdown-item" href="#">Creer un compte</a></li>
-                </ul>
-            </div>
+
+            <section class="d-none d-md-none d-lg-block">
+                <a href="#"><i class="fas fa-search me-3"style="color: white"></i></a>
+                <a href="../inscription/inscription.html"> <i class="fa-solid fa-user icon mx-4" style="color: white" ></i></a>
+            </section>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
     </div>
 </nav>
-<p>votre blog</p>
+    <p class="fs-1 fw-bold text-center text-capitalize mt-3 shadow p-3 bg-success-subtle">actualités / communauté presse</p>
+    <section class="container-fluid">
+        <main class="row column-gap-4 row-gap-5 justify-content-around">
+            <img src="../../image/Logo%202.png" style="height: 200px" class="col-md-6 col-lg-2 rounded-pill" alt="">
+            <div class="col-md-6 col-lg-5">
+                <p class="fs-2 fw-semibold">GreenFood® lance le Nutri-Score et conforte son approche nutritionnelle avec 90% de son coeur de gamme noté A et B</p>
+                <p>mercredi 1 juin 2022 -  GreenFood déploie l’affichage du Nutri-Score dans l’ensemble des restaurants du Cameroun et sur ses plateformes digitales à compter du 1er juin 2023. L’évaluation de 28 recettes emblématiques de l’offre a été réalisée en partenariat avec un laboratoire camerounais indépendant, leader mondial de la bio-analyse.
+                    <br>Lancé de manière volontaire et dès à présent appliqué à une sélection de repas et l’ensemble des wraps, salades, accompagnements et desserts de l’offre ; l’indicateur est destiné à guider les consommateurs vers des choix nutritionnels plus avisés. Le label est désormais présent sur le site internet de l’enseigne, les portails des agrégateurs et son application mobile. Pour plus d'informations, consultez l'Enseigne.
+                </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Parcourir
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">L'Enseigne</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Il nous est impossible pour le moment de vous amener sur cette page. Veuillez réesayez plus tard.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Réesayez</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <hr>
+                <img src="../../image/old-geographical-globe-map-book-260nw-2311165765.webp" style="border-top-left-radius: 30px; border-top-right-radius: 30px;" alt="">
+                <p class="fs-2 fw-bold">L'histoire de GreenFood®</p>
+                <p class="overflow-y-auto" style="height: 125px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aut blanditiis cupiditate doloribus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad alias amet asperiores assumenda, beatae commodi consequatur distinctio enim et excepturi facere hic in ipsam labore libero minima minus neque nostrum quam quia quisquam quos reiciendis reprehenderit sed tempora tempore ut velit veritatis, voluptatem. Ad aliquam deleniti doloribus in inventore itaque laudantium, possimus praesentium quae quam, quis quisquam voluptatibus. Aliquam assumenda, consequatur delectus ea iste non officiis omnis perspiciatis porro possimus, qui quisquam recusandae rerum sapiente tempora. Accusantium aliquam blanditiis consequuntur doloribus hic illo libero maiores qui quod repudiandae sit, tempora ut, voluptate. Ducimus iure laboriosam nisi quam, ut voluptate. ducimus eligendi eos error esse excepturi fuga fugiat harum ipsum labore, magnam nobis nostrum obcaecati officiis perferendis quae quam quod repellendus saepe, sequi sint vel vero voluptas. Commodi, fuga fugiat incidunt ipsum magni porro quas sapiente voluptatibus. Aliquam at est et nemo possimus tempore temporibus! Accusamus accusantium, ad aliquid consectetur culpa cupiditate deleniti deserunt distinctio, dolorem dolores ea eligendi excepturi exercitationem explicabo fuga fugit hic illo ipsa ipsum labore laborum minus molestiae mollitia necessitatibus odio officia pariatur quas quidem ut vel velit vitae voluptate voluptates. Vel?</p>
+            </div>
+        </main>
+    </section>
+    <p class="text-capitalize fs-1 fw-bold shadow mt-2 p-4 text-center bg-success-subtle" id="locaux">Nos locaux pour nos différentes convives </p>
+    <main class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../../image/Restaurant15.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">LA TERRASSE</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Dernière mise à jour il y'a 2 jours</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../../image/Salle%20de%20réception.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">LA SALLE DE RECEPTION</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Dernière mise à jour il y'a 2 jours</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../../image/Bar.jpeg" class="card-img-top"style="height: 278px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">LE BAR / LA CAFETERIE / LA CAISSE</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Dernière mise à jour il y'a 2 jours</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../../image/Cave.jpeg" class="card-img-top" style="height: 278px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">LA CAVE</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Dernière mise à jour il y'a 2 jours</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../../image/Cuisine.jpeg" class="card-img-top" style="height: 278px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">LA CUISINE</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Dernière mise à jour il y'a 2 jours</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../../image/Sanitaire.jpeg" class="card-img-top"style="height: 278px"style="height: 340px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">LES SANITAIRES</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Dernière mise à jour il y'a 2 jours</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <p class="text-capitalize fs-1 fw-bold shadow mt-5 p-4 text-center bg-success-subtle" id="chefs">Nos Chefs les plus prestigieux</p>
+    <main class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../../image/chef6.jpeg" class="card-img-top" style="height: 278px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Aymeric Laurent KENFACK</h5>
+                        <p class="card-text">Titre: Chef patissier <br>32ans <br>Superviseur</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Dernière mise à jour il y'a 2 jours</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../../image/chef8.jpeg" class="card-img-top" style="height: 278px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Isabelle SANDIE</h5>
+                        <p class="card-text">Titre: Chef de rang de room service<br>28ans <br>Hôtesse de salle</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Dernière mise à jour il y'a 2 jours</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../../image/chef5.jpeg" class="card-img-top"style="height: 278px"style="height: 340px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Jacques François MVONDO</h5>
+                        <p class="card-text">Titre: Chef traiteur <br>35ans <br>Entremetteur</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Dernière mise à jour il y'a 2 jours</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <main class="container-fluid mt-5">
+        <div class="row justify-content-evenly">
+            <div class="col-md-6 col-lg-5" id="Réduction">
+                <p class="text-capitalize fs-1 fw-bold shadow mt-2 p-4 text-center bg-success-subtle">Nos Réductions</p>
+                <div class="card">
+                    <img src="../../image/Réduction1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Spécial-Promo-Fin-D'Anée</h5>
+                        <p class="card-text">10% de réduction sur tous nos plats et à tous nos convives gagnant à l'épreuve du tirage au sort qui se tiendra ce 24 décembre 2023.<br> NB:Pour bénéficier de cela, inscrivez-vous dès maintenant sur notre site <a href="../connexion/user.html">www.greenfood.com</a> . Seuls les 10 premiers seront choisis.</p>
+                        <a href="../inscription/inscription.html" class="btn btn-primary">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-5" id="Livraison">
+                <p class="text-capitalize fs-1 fw-bold shadow mt-2 p-4 text-center bg-success-subtle">Nos Livraisons</p>
+                <div class="card">
+                    <img src="../../image/Livraison4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nos-Services-Livraison</h5>
+                        <p class="card-text">Commandez de partout dans la ville de Douala. Le service est rapide, fiable et totalement gratuit. Nos équipes environnent les 3/4 de la ville, et en cas de soucis, vous avez droit à la prime <em>"d'un repas acheté, un offert".</em> A la seule condition que celui-ci soit du même prix.
+                            <br>Comme le dit son slogan, <strong>Your Food, your Health.</strong>Notre objectif est de vous satisfaire. </p>
+                        <a href="#" class="btn btn-primary">Commander</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <p class="text-capitalize fs-1 fw-bold shadow mt-5 p-4 text-center bg-success-subtle" id="Evènements">Nos Evènements</p>
+    <div class="container-fluid pb-5">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 pt-5 pb-5 card1 text-center">
+                <p class="fs-2 text-white opacity-75">EVENEMENT SPÉCIAL</p>
+                <hr class="text-white">
+                <div>
+                    <h5 class="card-title fs-3 text-white opacity-75">SPECIAL SAINT-VALENTIN</h5>
+                    <p class="card-text text-white fs-6 opacity-75">Déjeuner du jour de saint valentin au GreenFood. Profitez d'un service inoubliable et d'un menu de cinq plats signé par les chefs exécutifs Aymeric Laurent KENFACK et Isabelle SANDIE pour votre valentin/valentine.</p>
+                </div>
+                <a href="blog2.html#Noel"><button type="button" class="btn btn-outline-light btn-lg mt-4">Visiter la Page</button></a>
+            </div>
+            <div class="col-md-6 col-lg-4 pt-5 pb-5 card3 text-center">
+                <p class="fs-2 text-white opacity-75">EVENEMENT SPÉCIAL</p>
+                <hr class="text-white">
+                <div>
+                    <h5 class="fs-3 card-title text-white opacity-75">SPECIAL FÊTE DES MERES</h5>
+                    <p class="card-text text-white fs-6 opacity-75">Rien que pour la journée de toutes les mamans au sein du GreenFood, bénéficiez de nos réductions les plus favorables. Des Offres exceptionnelles envers nos convives y seront à l'ordre du jour.</p>
+                </div>
+                <a href="blog2.html#Bonne année"><button type="button" class="btn btn-outline-light btn-lg mt-4">Visiter la Page</button></a>
+            </div>
+            <div class="col-md-6 col-lg-4 pt-5 pb-5 card2 text-center">
+                <p class="fs-2 text-white opacity-75">EVENEMENT SPÉCIAL</p>
+                <hr class="text-white">
+                <div>
+                    <h5 class="card-title fs-3 text-white opacity-75">SPECIAL FÊTE DE PÂQUES</h5>
+                    <p class="card-text text-white fs-6 opacity-75">La pâques de 2024 au GreenFood. Célébrez la chez nous dans nos locaux en famille ou entre amis et passez une soirée inoubliable. Des oeufs au chocolat et des lapins vous attendrons ce jour, alors venez nombreux.</p>
+                </div>
+                <a href="blog2.html#Reveillon"><button type="button" class="btn btn-outline-light btn-lg mt-4">Visiter la Page</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 pt-5 pb-5 card4 text-center">
+                <p class="fs-2 text-white opacity-75">PRIX SPÉCIAL</p>
+                <hr class="text-white">
+                <div>
+                    <h5 class="card-title fs-3 text-white opacity-75">TROIS MEDAILLES D'OR</h5>
+                    <p class="card-text text-white fs-6 opacity-75">Au concours du Sydney Morning Herald Good Food Guide 2024 Awards, très honorés nous sommes d'avoir obtenu trois médailles d'or et une de bronze au concours de cette année.</p>
+                </div>
+                <a href="blog2.html#Prix spécial"><button type="button" class="btn btn-outline-light btn-lg mt-4">Visiter la Page</button></a>
+            </div>
+            <div class="col-md-6 col-lg-4 pt-5 pb-5 card5 text-center">
+                <p class="fs-2 text-white opacity-75">MENU SPÉCIAL</p>
+                <hr class="text-white">
+                <div>
+                    <h5 class="card-title fs-3 text-white opacity-75">ACCORD AVEC DU CHAMPAGNE</h5>
+                    <p class="card-text text-white fs-6 opacity-75">Accord de champagne au GreenFood À l'approche des fêtes de fin d'année, nous espérons célébrer avec vous autour d'un excellent champagne..</p>
+                </div>
+                <a href="blog2.html#Menus"><button type="button" class="btn btn-outline-light btn-lg mt-4">Visiter la Page</button></a>
+            </div>
+            <div class="col-md-6 col-lg-4 pt-5 pb-5 card6 text-center">
+                <p class="fs-2 text-white opacity-75">PRIX SPÉCIAL</p>
+                <hr class="text-white">
+                <div>
+                    <h5 class="card-title fs-3 text-white opacity-75">LA LISTE 1000</h5>
+                    <p class="card-text text-white fs-6 opacity-75">La Top Liste des 1000 Restaurants 2024: Nous sommes honorés d'avoir obtenu la 107<sup>ème</sup> place dans le classement des 1000 meilleurs restaurants de La Liste mondiale.</p>
+                </div>
+                <a href="blog2.html#Prix spécial"><button type="button" class="btn btn-outline-light btn-lg mt-4">Visiter la Page</button></a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container-fluid" style="background-color: rgb(213, 221, 219)">
+            <div class="container">
+                <p class="display-4 pt-3 parafooter fw-bolder">GreenFood</p>
+                <div class="row">
+                    <div class="col-lg-3 mt-3">
+                        <h4 class="fw-bold">Switcher entre les pages</h4>
+                        <p class="mb-2">
+                        <ul>
+                            <li class="foot"><a class="foot1"href="../../index.html">Accueil</a></li>
+                            <li class="foot"><a class="foot1" href="../menu/menu.html">Menu</a></li>
+                            <li class="foot"><a class="foot1"href="#">Actualités</a></li>
+                            <li class="foot"><a class="foot1"href="../New%20blog/new_blog.html">Blog</a></li>
+                            <li class="foot"><a class="foot1"href="../reservation/reservation.html">Reservation</a></li>
+                            <li class="foot"><a class="foot1"href="../nos%20recettes/recettes.html">Nos recettes</a></li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 mt-3">
+                        <h4 class="fw-bold">Localisation</h4>
+                        <p class="mb-5">
+                            Restaurant GreenFood Bonapriso rue Dominique Savio <br>
+                            Telephone: 675750282 / 693959375
+                        </p>
+
+                    </div>
+                    <div class="col-lg-3 mt-3">
+                        <h4 class="fw-bold">Horaires d'ouverture</h4>
+                        <p class="mb-5">
+                            DEJEUNER <br>
+                            Lundi a Dimanche <br>
+                            Reservations de 7h a 20h <br>
+                            et le Dimanche de 10h 0 15h <br>
+
+                            DINER <br>
+                            Lundi a Samedi <br>
+                            Reservations de 12h a 20h30 <br>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 mt-3">
+                        <h4 class="fw-bold">Nos reseaux sociaux</h4>
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook  border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i></a>
+                        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i></a>
+                        <a href="https://www.instagram"><i class="fa-brands fa-instagram border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="../../js/jquery.js"></script>
+<script src="../../js/index.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>

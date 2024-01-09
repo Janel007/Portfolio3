@@ -3,281 +3,541 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenFood Company</title>
+    <title>GreenFood Restaurant</title>
     <link rel="icon" href="image/Logo%202.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@1,300&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,500;1,300&display=swap">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg shadow" style="font-family:'roboto',sans-serif">
-    <div class="container-fluid">
-        <a class="navbar-brand " href="#"><img src="image/Logo%202.png" style="width:100px;height:60px;" class="rounded mx-3" alt=""></a>
+<nav class="navbar navbar-expand-lg sticky-top" style="font-family:'roboto',sans-serif">
+    <div class="d-lg-none d-md-none mb-1" style="position: relative; left: 130px">
+        <a class="navbar-brand"  href="index.html"><img src="image/Logo%208.png" style="width:100px;height:60px;" class="rounded mx-3" alt=""></a>
+    </div>
+    <div class="container-fluid mt-2 mb-2">
+        <a class="navbar-brand d-none d-lg-block" href="index.html"><img src="image/Logo%208.png" style="width:100px;height:60px;" class="rounded mx-3" alt=""></a>
+        <a class="navbar-brand d-none d-lg-none d-md-block" href="index.html"><img src="image/Logo%208.png" style="width:100px;height:60px; position: relative; left: 360px" class="rounded mx-3" alt=""></a>
+        <input type="search" class="form-control text-primary d-lg-none mb-2" placeholder="Entrez une Catégorie de Recette">
+        <section class="d-lg-none mb-1">
+            <a href="#"><i class="fas fa-search me-3"style="color: white"></i></a>
+            <a href="pages/inscription/inscription.html"> <i class="fa-solid fa-user icon mx-4" style="color: white"></i></a>
+        </section>
+        <button class="navbar-toggler mb-2" type="button" style="background-color: white" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-4 mb-2 mb-lg-0 fs-5">
-                <li class="nav-item ps-5 pe-2">
-                    <a class="nav-link" aria-current="page" href="#">Accueil</a>
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0 fs-5 ">
+                <li class="nav-item mx-2 px-2">
+                    <a class="nav-link actives" aria-current="page" href="#">Accueil</a>
                 </li>
                 <div class="dropdown">
-                    <a class="nav-link dropdown-toggle mx-4" href="pages/menu/menu.html" data-bs-toggle="dropdown" aria-expanded="false">
-                        Menu
+                    <a class="nav-link  mx-2 px-2 dropdown-toggle text-light" href="pages/menu/menu.html" data-bs-toggle="dropdown" aria-expanded="false">
+                        La Carte
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="pages/menu/menu.html">Nos Entrées et Appéritifs</a></li>
-                        <li><a class="dropdown-item" href="pages/menu/menu.html">Nos Plats</a></li>
-                        <li><a class="dropdown-item" href="pages/menu/menu.html">Nos Desserts</a></li>
-                        <li><a class="dropdown-item" href="pages/menu/menu.html">Nos Cocktails</a></li>
+                    <ul class="dropdown-menu opacity-75" style="background-color: dimgray">
+                        <li><a class="dropdown-item" href="pages/menu/menu.html#Nos entrees et apperitifs">Nos Entrées et Appéritifs</a></li>
+                        <li><a class="dropdown-item" href="pages/menu/menu.html#Nos plats">Nos Plats</a></li>
+                        <li><a class="dropdown-item" href="pages/menu/menu.html#Nos desserts">Nos Desserts</a></li>
+                        <li><a class="dropdown-item" href="pages/menu/menu.html#Nos cocktails">Nos Cocktails</a></li>
 
                     </ul>
                 </div>
-                <li class="nav-item ms-0 me-2 px-2">
-                    <a class="nav-link" href="pages/nos%20recettes/recettes.html">Nos recettes</a>
+                <li class="nav-item mx-2 px-2">
+                    <a class="nav-link" href="pages/nos%20recettes/recettes.html">Nos Récettes</a>
                 </li>
                 <li class="nav-item mx-2 px-2">
-                    <a class="nav-link" href="pages/blog/blog.html">Blog</a>
+                    <a class="nav-link" href="pages/blog/blog.html">Actualités</a>
+                </li>
+                <li class="nav-item mx-2 px-2">
+                    <a class="nav-link" href="pages/New%20blog/new_blog.html">Blog</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link px-2" href="pages/reservation/reservation.html">Réservation</a>
                 </li>
 
-                <li class="nav-item mx-2 px-2">
-                    <a class="nav-link" href="pages/connexion/user.html">Se connecter <i class="fa-fas-solid user"></i> </a>
-                </li>
-                <li class="nav-item px-5">
-                    <a class="nav-link mx-2 rounded" href="pages/reservation/reservation.html" style="background-color: black; color: white">Reservation</a>
-                </li>
-                <!--<form class="d-flex position-relative" role="search">
-                    <i class="fas fa-search position-absolute top-0 end-0 pe-3 py-3"></i>
-                </form>-->
             </ul>
-            <div class="dropdown ms-auto d-lg-block d-md-none ">
-                <button class="btn bg-white me-5 border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-user icon" ></i>
-                </button>
-                <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Se connecter</a></li>
-                    <li><a class="dropdown-item" href="#">Creer un compte</a></li>
-                </ul>
-            </div>
+
+
+            <section class="d-none d-md-none d-lg-block d-lg-flex">
+                <input type="search" id="search" onchange="ouvrirpage()" value="" class="form-control text-primary me-3" placeholder="Entrez une Catégorie de Recette">
+                <a href="#"><i class="fas fa-search me-3 cible"style="color: white"></i></a>
+                <a href="pages/inscription/inscription.html"> <i class="fa-solid fa-user icon mx-4" style="color: white" ></i></a>
+            </section>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
     </div>
 </nav>
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="image/Restaurant1.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block position-absolute top-50">
-                <h5 class="opacity-75" style="font-size: 60px;">Nos Locaux Les Plus Salubres</h5>
-                <p class="p-2 fs-4">Some representative placeholder content for the second slide.</p>
+<section class="container-fluid w-100">
+    <main class="row row-gap-5">
+        <div class="col-md-6 col-lg-4">
+            <div id="carouselExampleRide" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="image/Logo%205%20.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Logo%206.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="image/images%20(1).png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="image/Logo%204.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-        <div class="carousel-item">
-            <img src="image/chef3.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block position-absolute top-50">
-                <h5 class="opacity-75" style="font-size: 60px;">Nos Meilleurs Chefs Pour Vos Convives</h5>
-                <p class="p-2 fs-4">Some representative placeholder content for the second slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="image/client4.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block position-absolute top-50">
-                <h5 class="opacity-75" style="font-size: 60px;">Nos Clients Les Plus Satisfaits</h5>
-                <p class="p-2 fs-4">Some representative placeholder content for the second slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="image/Evènement2.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block position-absolute top-50">
-                <h5 class="opacity-75" style="font-size: 60px;">Nos Evènements</h5>
-                <p class="p-2 fs-4">Some representative placeholder content for the second slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="image/Restaurant2.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block position-absolute top-50">
-                <h5 class="opacity-75" style="font-size: 60px;">Nos Locaux Les Plus Salubres</h5>
-                <p class="p-2 fs-4">Some representative placeholder content for the second slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="image/chef2.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block position-absolute top-50">
-                <h5 class="opacity-75" style="font-size: 60px;">Nos Meilleurs Chefs Pour Vos Convives</h5>
-                <p class="p-2 fs-4">Some representative placeholder content for the second slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="image/client1.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block position-absolute top-50">
-                <h5 class="opacity-75" style="font-size: 60px;">Nos Clients Les Plus Satisfaits</h5>
-                <p class="p-2 fs-4">Some representative placeholder content for the second slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="image/Evènement3.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block position-absolute top-50">
-                <h5 class="opacity-75" style="font-size: 60px;">Nos Evènements</h5>
-                <p class="p-2 fs-4">Some representative placeholder content for the second slide.</p>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
-    <div class="container">
-        <div class="row">
-           <div class="col-lg-7 col-md-6 py-5">
-               <p class="fs-1 text-success mt-3 pt-5">Bienvenue chez-nous</p>
-               <p class="fs-4 pt-4 text-justify" style="font-family: 'Playfair Display',sans-serif">Le restaurant GreenFood, à la rencontre des herbes et des épices d'ici et d'ailleurs, vous invite à faire un voyage cullinaire en direction de tous les pays du monde.<br>Une place d'honneur et de choix est faite aux herbes et aux légumes rares de saison.<br>Dégustez des plats sains, savoureux et équilibrés entre amis, en famille ou en couple, accompagnés de bons cocktails et finissant le voyage sur un dessert de votre choix. <br> Des repas surprenant faite d'amour et de folie vous attendent pour passer un agréable moment de détente. </p>
-           </div>
-            <div class="col-lg-5 col-md-6">
-                <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="image/plats/Vite-un-menu-d-automne-improvise.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="image/plats/Tarte-multicolore-potimarron-betterave-oignon-creme-de-parmesan-a-la-moutarde.jpg" class="d-block w-75" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="image/plats/30-recettes-pas-cheres-a-faire-en-novembre-pour-contrer-le-froid.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="image/plats/Tarte-feuilletee-pomme-camembert.jpg" class="d-block w-75" alt="">
+        <div class="col-md-6 col-lg-8">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/plats2/Okok2.jpeg" class="d-block w-100" style="height: 500px; filter: brightness(50%)" alt="...">
+                        <div class="carousel-caption d-none d-md-block position-absolute top-50">
+                            <h5 class="opacity-75" style="font-size: 60px;">L'Okok Sucré/Salé</h5>
+                            <p class="p-2 fs-4">Des saveurs inspirées par les saisons.</p>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <div class="carousel-item">
+                        <img src="image/plats/Cordons-bleus-au-four.jpg" class="d-block w-100" style="height: 500px; filter: brightness(50%)" alt="...">
+                        <div class="carousel-caption d-none d-md-block position-absolute top-50">
+                            <h5 class="opacity-75" style="font-size: 60px;">Galettes Bretognes Aux Blettes</h5>
+                            <p class="p-2 fs-4">Où chaque saveur raconte une histoire.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/plats2/repas18.jpeg" class="d-block w-100" style="height: 500px; filter: brightness(50%)" alt="...">
+                        <div class="carousel-caption d-none d-md-block position-absolute top-50">
+                            <h5 class="opacity-75" style="font-size: 60px;">Le Koki Bamiléké</h5>
+                            <p class="p-2 fs-4">Dégustez et appréciez de la qualité.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/plats/Plat%20végan4.jpeg" style="height: 500px; filter: brightness(50%)" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block position-absolute top-50">
+                            <h5 class="opacity-75" style="font-size: 60px;">Croque-madame-aux-épinards</h5>
+                            <p class="p-2 fs-4">Pour l'amour d'un délicieux repas.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/plats2/repas16.jpeg" class="d-block w-100" style="height: 500px; filter: brightness(50%)" alt="...">
+                        <div class="carousel-caption d-none d-md-block position-absolute top-50">
+                            <h5 class="opacity-75" style="font-size: 60px;">Le Corn-Tchap</h5>
+                            <p class="p-2 fs-4">Des saveurs inspirées par les saisons.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/plats/Tarte-feuilletee-pomme-camembert.jpg" class="d-block w-100" style="height: 500px; filter: brightness(50%)" alt="...">
+                        <div class="carousel-caption d-none d-md-block position-absolute top-50">
+                            <h5 class="opacity-75" style="font-size: 60px;">Tarte-feuilletee-pomme</h5>
+                            <p class="p-2 fs-4">Où chaque saveur raconte une histoire.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/plats2/Beignets-haricots2.jpeg" class="d-block w-100" style="height: 500px; filter: brightness(50%)" alt="...">
+                        <div class="carousel-caption d-none d-md-block position-absolute top-50">
+                            <h5 class="opacity-75" style="font-size: 60px;">Des Beignets-Haricots</h5>
+                            <p class="p-2 fs-4">Dégustez et appréciez de la qualité.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/plats/Risotto-epinards-et-champignons-au-four.jpg" class="d-block w-100" style="height: 500px; filter: brightness(50%)" alt="...">
+                        <div class="carousel-caption d-none d-md-block position-absolute top-50">
+                            <h5 class="opacity-75" style="font-size: 60px;">Risotto-aux-champignons</h5>
+                            <p class="p-2 fs-4">Pour l'amour d'un délicieux repas.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/plats2/Pommes-pilées%202.jpeg" class="d-block w-100" style="height: 500px; filter: brightness(50%)" alt="...">
+                        <div class="carousel-caption d-none d-md-block position-absolute top-50">
+                            <h5 class="opacity-75" style="font-size: 60px;">Les Pommes Pilées</h5>
+                            <p class="p-2 fs-4">Des saveurs inspirées par les saisons.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/plats/Lasagna-verde.jpg" class="d-block w-100" style="height: 500px; filter: brightness(50%)" alt="...">
+                        <div class="carousel-caption d-none d-md-block position-absolute top-50">
+                            <h5 class="opacity-75" style="font-size: 60px;">Lasagna-verde</h5>
+                            <p class="p-2 fs-4">Où chaque saveur raconte une histoire</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/plats2/Tarot2.jpeg" class="d-block w-100" style="height: 500px; filter: brightness(50%)" alt="...">
+                        <div class="carousel-caption d-none d-md-block position-absolute top-50">
+                            <h5 class="opacity-75" style="font-size: 60px;">Spécial Tarot Sauce Jaune</h5>
+                            <p class="p-2 fs-4">Pour l'amour d'un délicieux repas.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/plats/Galettes-de-carottes.jpg" class="d-block w-100" style="height: 500px; filter: brightness(50%)" alt="...">
+                        <div class="carousel-caption d-none d-md-block position-absolute top-50">
+                            <h5 class="opacity-75" style="font-size: 60px;">Voir les autres repas</h5>
+                            <a href="pages/menu/menu.html"><button type="button" class="btn btn-success btn-lg w-25">Cliquez-ici</button></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </main>
+</section>
+
+<div class="container mt-4 mb-3">
+        <div class="row column-gap-5 row-gap-5">
+           <div class="col-lg-6 col-md-6">
+               <p class="fs-1 text-success mt-3">Bienvenue chez-nous</p>
+               <p class="fs-4 pt-4 text-justify" style="font-family: 'Playfair Display',sans-serif">Le restaurant GreenFood, à la rencontre des herbes et des épices d'ici et d'ailleurs, vous invite à faire un voyage cullinaire en direction de tous les pays du monde.<br>Une place d'honneur et de choix est faite aux herbes et aux légumes rares de saison.<br>Dégustez des plats sains, savoureux et équilibrés entre amis, en famille ou en couple, accompagnés de bons cocktails et finissant le voyage sur un dessert de votre choix. <br> Des repas surprenant faits d'amour et de folie vous attendent pour passer un agréable moment de détente. </p>
+           </div>
+            <div class="col-lg-5 col-md-6 my-auto">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="image/cocktail3.jpeg" class="d-block w-100" style="height: 350px" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="image/cocktail4.jpeg" class="d-block w-100" style="height: 350px" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="image/cocktail1.jpeg" class="d-block w-100" style="height: 350px" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="image/cocktail11.jpeg" class="d-block w-100" style="height: 350px" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="image/cocktail2.jpeg" class="d-block w-100" style="height: 350px" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="image/cocktail8.jpeg" class="d-block w-100" style="height: 350px" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+                <a href="pages/menu/menu.html#Nos cocktails"><button type="button" class="btn btn-success mt-4">Voir-tout</button></a>
             </div>
         </div>
     </div>
 
-<div class="container mt-5">
-    <div class="row column-gap-0 row-gap-5">
-        <div class="col-lg-7 col-md-6 c1">
-            <p class="fs-1 text-warning mt-5 text-center">Les Plus Populaires à Table</p> <br>
-            <ol>
-                <a class="icon-link icon-link-hover text-decoration-none my-2" href="#">
-                    <p><p class="fs-1">1</p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias dignissimos exercitationem incidunt possimus saepe.</p>
-                    <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-                </a>
-                <a class="icon-link icon-link-hover text-decoration-none my-2" href="#">
-                    <p><p class="fs-1">2</p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias dignissimos exercitationem incidunt possimus saepe.</p>
-                    <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-                </a>
-                <a class="icon-link icon-link-hover text-decoration-none my-2" href="#">
-                <p><p class="fs-1">3</p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias dignissimos exercitationem incidunt possimus saepe.</p>
-                <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-                </a>
-                <a class="icon-link icon-link-hover text-decoration-none my-2" href="#">
-                <p><p class="fs-1">4</p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias dignissimos exercitationem incidunt possimus saepe.</p>
-                <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-                </a>
-                <a class="icon-link icon-link-hover text-decoration-none my-2" href="#">
-                <p><p class="fs-1">5</p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias dignissimos exercitationem incidunt possimus saepe.</p>
-                <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-                </a>
-                <a class="icon-link icon-link-hover text-decoration-none my-2" href="#">
-                    <p><p class="fs-1">6</p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias dignissimos exercitationem incidunt possimus saepe.</p>
-                    <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-                </a>
-                <a class="icon-link icon-link-hover text-decoration-none my-2" href="#">
-                    <p><p class="fs-1">7</p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias dignissimos exercitationem incidunt possimus saepe.</p>
-                    <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-                </a>
-                <a class="icon-link icon-link-hover text-decoration-none my-2" href="#">
-                    <p><p class="fs-1">8</p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias dignissimos exercitationem incidunt possimus saepe.</p>
-                    <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-                </a>
-                <a class="icon-link icon-link-hover text-decoration-none my-2" href="#">
-                    <p><p class="fs-1">9</p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias dignissimos exercitationem incidunt possimus saepe.</p>
-                    <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-                </a>
-                <a class="icon-link icon-link-hover text-decoration-none my-2" href="#">
-                    <p><p class="fs-1">10</p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias dignissimos exercitationem incidunt possimus saepe.</p>
-                    <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-                </a>
-            </ol>
-            <a class="navbar-brand " href="#"><img src="image/Logo%202.png" style="width:130px;height:70px;" class="rounded mx-3" alt=""></a>
+
+<section class="container-fluid mt-5">
+    <main class="row justify-content-evenly">
+        <div class="col-lg-7 col-md-6">
+            <p class="fs-1 text-warning mt-5 text-center">Les Plus Populaires Du Moment</p>
+            <div class="container">
+                <div class="row row-gap-4 justify-content-evenly">
+                    <div class="card col-lg-3 align-items-center floot" style="height: 220px; width: 260px; border: none">
+                        <img src="image/entree%20et%20apperitif/galettes-courgette-tofu.jpg" style="border-radius: 100%; width: 100px; height: 100px; border: 2px solid red;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Galettes courgette tofu</h5>
+                            <div class="text-center"><a href="pages/nos%20recettes/recettes.html" class="text-decoration-none text-success">Voir la recette</a></div>
+                        </div>
+                    </div>
+                    <div class="card border-light col-lg-3 align-items-center floot" style="height: 220px; width: 260px; border: none">
+                        <img src="image/plats/Plat%20végan3.jpeg" style="border-radius: 100%; width: 100px; height: 100px; border: 2px solid red;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Makis à la friture de légumes</h5>
+                            <div class="text-center"><a href="pages/nos%20recettes/recettes.html" class="text-decoration-none text-success">Voir la recette</a></div>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 align-items-center floot" style="height: 220px; width: 260px; border: none">
+                        <img src="image/plats/Pommes-de-terre-farcies.jpg" style="border-radius: 100%; width: 100px; height: 100px; border: 2px solid red;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Pommes-de-terre-farcies</h5>
+                            <div class="text-center"><a href="pages/nos%20recettes/recettes.html" class="text-decoration-none text-success">Voir la recette</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-gap-4 mt-4 justify-content-evenly">
+                    <div class="card col-lg-3 align-items-center floot" style="height: 200px; width: 260px; border: none">
+                        <img src="image/entree%20et%20apperitif/entre1.jpeg" style="border-radius: 100%; width: 100px; height: 100px; border: 2px solid red;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Socca Niçoise</h5>
+                            <div class="text-center"><a href="pages/nos%20recettes/recettes.html" class="text-decoration-none text-success">Voir la recette</a></div>
+                        </div>
+                    </div>
+                    <div class="card border-light col-lg-3 align-items-center floot" style="height: 200px; width: 260px; border: none">
+                        <img src="image/entree%20et%20apperitif/entree2.jpeg" style="border-radius: 100%; width: 100px; height: 100px; border: 2px solid red;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Muffins confite</h5>
+                            <div class="text-center"><a href="pages/nos%20recettes/recettes.html" class="text-decoration-none text-success">Voir la recette</a></div>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 align-items-center floot" style="height: 220px; width: 260px; border: none">
+                        <img src="image/plats/Salade-japonaise.jpg" style="border-radius: 100%; width: 100px; height: 100px; border: 2px solid red;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Salade-japonaise</h5>
+                            <div class="text-center"><a href="pages/nos%20recettes/recettes.html" class="text-decoration-none text-success">Voir la recette</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-gap-4 mt-4 justify-content-evenly">
+                    <div class="card col-lg-3 align-items-center floot" style="height: 200px; width: 260px; border: none">
+                        <img src="image/entree%20et%20apperitif/salade2.jpeg" style="border-radius: 100%; width: 100px; height: 100px; border: 2px solid red;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Salade de pois chiches</h5>
+                            <div class="text-center"><a href="pages/nos%20recettes/recettes.html" class="text-decoration-none text-success">Voir la recette</a></div>
+                        </div>
+                    </div>
+                    <div class="card border-light col-lg-3 align-items-center floot" style="height: 200px; width: 260px; border: none">
+                        <img src="image/entree%20et%20apperitif/salade3.jpeg" style="border-radius: 100%; width: 100px; height: 100px; border: 2px solid red;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Salade avalanche</h5>
+                            <div class="text-center"><a href="pages/nos%20recettes/recettes.html" class="text-decoration-none text-success">Voir la recette</a></div>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 align-items-center floot" style="height: 220px; width: 260px; border: none">
+                        <img src="image/plats/purée-d'avocat.jpeg" style="border-radius: 100%; width: 100px; height: 100px; border: 2px solid red;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Purée-d'avocat</h5>
+                            <div class="text-center"><a href="pages/nos%20recettes/recettes.html" class="text-decoration-none text-success">Voir la recette</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-gap-4 mt-4 justify-content-evenly">
+                    <div class="card col-lg-3 align-items-center floot" style="height: 200px; width: 260px; border: none">
+                        <img src="image/plats2/repas5.jpeg" style="border-radius: 100%; width: 100px; height: 100px; border: 2px solid red;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Le Sangha 2.0</h5>
+                            <div class="text-center"><a href="pages/nos%20recettes/recettes.html" class="text-decoration-none text-success">Voir la recette</a></div>
+                        </div>
+                    </div>
+                    <div class="card border-light col-lg-3 align-items-center floot" style="height: 200px; width: 260px; border: none">
+                        <img src="image/plats2/repas17.jpeg" style="border-radius: 100%; width: 100px; height: 100px; border: 2px solid red;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Tenue millitaire</h5>
+                            <div class="text-center"><a href="pages/nos%20recettes/recettes.html" class="text-decoration-none text-success">Voir la recette</a></div>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 align-items-center floot" style="height: 220px; width: 260px; border: none">
+                        <img src="image/plats/Soupe-au-potiron.jpeg" style="border-radius: 100%; width: 100px; height: 100px; border: 2px solid red;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Soupe-au-potiron</h5>
+                            <div class="text-center"><a href="pages/nos%20recettes/recettes.html" class="text-decoration-none text-success">Voir la recette</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-gap-4 mt-4 justify-content-evenly">
+                    <div class="card col-lg-3 align-items-center floot" style="height: 220px; width: 260px; border: none">
+                        <img src="image/plats/Champignons%20de%20légumes.jpeg" style="border-radius: 100%; width: 100px; height: 100px; border: 2px solid red;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Champignons de légumes</h5>
+                            <div class="text-center"><a href="pages/nos%20recettes/recettes.html" class="text-decoration-none text-success">Voir la recette</a></div>
+                        </div>
+                    </div>
+                    <div class="card border-light col-lg-3 align-items-center floot" style="height: 220px; width: 260px; border: none">
+                        <img src="image/plats2/repas6.jpeg" style="border-radius: 100%; width: 100px; height: 100px; border: 2px solid red;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Pommes pilées haricots</h5>
+                            <div class="text-center"><a href="pages/nos%20recettes/recettes.html" class="text-decoration-none text-success">Voir la recette</a></div>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 align-items-center floot" style="height: 220px; width: 260px; border: none">
+                        <img src="image/plats/Creme-de-brocoli-legere-aux-noisettes.jpg" style="border-radius: 100%; width: 100px; height: 100px; border: 2px solid red;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Creme-de-brocoli-legere</h5>
+                            <div class="text-center"><a href="pages/nos%20recettes/recettes.html" class="text-decoration-none text-success">Voir la recette</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card text-bg-light mb-4 mt-5 Bienfaits" style=" background-image: url('image/plats/Vite-un-menu-d-automne-improvise.jpg'); background-size: cover;">
+                        <div class="card-header text-success fs-5">Découvrez Egalement :</div>
+                        <div class="card-body">
+                            <h5 class="card-title text-success fs-3">Les Bienfaits de notre cuisine</h5>
+                            <p class="card-text text-success mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="pages/blog/blog3.html"><button type="button" class="btn btn-success">Parcourir</button></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="col-lg-5 col-md-6 c2">
+        <div class="col-lg-4 col-md-6 bg-success-subtle">
             <p class="fs-1 text-success mt-5 text-center">Toute L'Actu De Notre Cuisine</p>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="image/plats/Macaronis-a-la-courge-butternut.jpg" class="img-fluid rounded-start" alt="...">
+            <div class="container-fluid mt-5">
+                <div class="card text-bg-light mb-4 w-100 locaux" style="background-image: url('image/Restaurant2.jpeg'); background-size: cover;">
+                    <div class="card-header text-white fs-5">Découvrez Egalement :</div>
+                    <div class="card-body">
+                        <h5 class="card-title text-white fs-3">Nos Locaux les Plus Conviviaux</h5>
+                        <p class="card-text text-white mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="pages/blog/blog.html#locaux"><button type="button" class="btn btn-success">Visiter</button></a>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Titre</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga minima non tenetur?.</p>
-                            <p class="card-text"><small class="text-body-secondary">Profitez-en</small></p>
-                        </div>
+                </div>
+                <div class="card text-bg-light mb-4 w-100 chefs" style="background-image: url('image/chef2.jpeg'); background-size: cover;">
+                    <div class="card-header text-black fs-5">Découvrez Egalement :</div>
+                    <div class="card-body">
+                        <h5 class="card-title text-black fs-3">Nos Chefs Les Plus Prestigieux</h5>
+                        <p class="card-text text-black mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="pages/blog/blog.html#chefs"><button type="button" class="btn btn-success">Visiter</button></a>
+                    </div>
+                </div>
+                <div class="card text-bg-light mb-4 w-100 Evènements" style="background-image: url('image/Evènement3.jpeg'); background-size: cover;">
+                    <div class="card-header text-white fs-5">Découvrez Egalement :</div>
+                    <div class="card-body">
+                        <h5 class="card-title text-white fs-3">Nos Evènements</h5>
+                        <p class="card-text text-white mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="pages/blog/blog.html#Evènements"><button type="button" class="btn btn-success">Visiter</button></a>
+                    </div>
+                </div>
+                <div class="card text-bg-light mb-4 w-100 Livraison" style="background-image: url('image/Livraison1.jpeg'); background-size: cover;">
+                    <div class="card-header text-white fs-5">Découvrez Egalement :</div>
+                    <div class="card-body">
+                        <h5 class="card-title text-white fs-3">Nos Services De Livraison</h5>
+                        <p class="card-text text-white mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="pages/blog/blog.html#Livraison"><button type="button" class="btn btn-success">Visiter</button></a>
+                    </div>
+                </div>
+                <div class="card text-bg-light mb-4 w-100 Réductions" style="background-image: url('image/Réduction1.jpeg'); background-size: cover;">
+                    <div class="card-header text-black fs-5">Découvrez Egalement :</div>
+                    <div class="card-body">
+                        <h5 class="card-title text-black fs-3">Nos Réductions</h5>
+                        <p class="card-text text-black mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="pages/blog/blog.html#Réduction"><button type="button" class="btn btn-success">Visiter</button></a>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="image/plats/Creme-dessert-aux-noix.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Titre</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga minima non tenetur?.</p>
-                            <p class="card-text"><small class="text-body-secondary">Profitez-en</small></p>
-                        </div>
-                    </div>
+        </div>
+    </main>
+</section>
+
+<div class="container">
+    <div class="row">
+        <p class="fs-1 fw-bold shadow mt-5 p-2 text-center bg-success-subtle">Notre Local</p>
+        <div class="row column-gap-5 row-gap-5 justify-content-around">
+            <div class="col-md-6 col-lg-7">
+                <img src="image/Restaurant12.jpeg" class="w-100 rounded" style="height: 325px" alt="">
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <p class="fs-2 fw-bold text-center text-success">Entrez dans le monde du GREEN</p>
+                <p class="fs-5">Si vous êtes un fin gourmet et que vous aimez goutter à des plats différents, ça tombe bien. Le GREEN vous ouvre ses portes pour vous faire découvrir un restaurant haut en couleur avec de nombreux plats à la carte ainsi que des accompagnements de qualité, pour un moment de tranquilité aux regards éloignés du monde.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <p class="fs-1 fw-bold shadow mt-5 p-2 text-center bg-success-subtle">Notre Priorité</p>
+        <div class="row column-gap-5 row-gap-5 justify-content-around">
+            <div class="card text-bg-light mb-4 col-md-6 col-lg-3" style="background-image: url('image/Logo 2.png'); background-size: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-white fs-3">Vous Aidez</h5>
+                    <p class="card-text text-white mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="image/plats/Chou-farci-au-potimarron-et-poitrine-fumee.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Titre</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga minima non tenetur?.</p>
-                            <p class="card-text"><small class="text-body-secondary">Profitez-en</small></p>
-                        </div>
-                    </div>
+            <div class="card text-bg-light mb-4 col-md-6 col-lg-3" style="background-image: url('image/Logo 3.png'); background-size: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-white fs-3">Vous satisfaire</h5>
+                    <p class="card-text text-white mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="image/plats/Galettes-de-carottes.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Titre</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga minima non tenetur?.</p>
-                            <p class="card-text"><small class="text-body-secondary">Profitez-en</small></p>
-                        </div>
-                    </div>
+            <div class="card text-bg-light mb-4 col-md-6 col-lg-3" style="background-image: url('image/Logo 1.png'); background-size: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-white fs-3">Vous faire plaisir</h5>
+                    <p class="card-text text-white mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<div class="container-fluid my-5 justify-content-around">
+   <div class="row row-gap-4 justify-content-evenly">
+       <div class="col-md-6 col-lg-6">
+           <iframe class="w-100 h-100" src="https://www.youtube.com/embed/TNR1v7buK-c?si=z0YsH8C3-Z62te2b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       </div>
+       <div class="col-md-6 col-lg-5">
+           <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254719.76107517807!2d9.413696686718735!3d4.021160000000011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106113eb4a87a285%3A0xf667098b95cb0bb8!2sJC%20Lounge%20Bonapriso!5e0!3m2!1sfr!2scm!4v1700910178709!5m2!1sfr!2scm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+   </div>
+</div>
+
+<footer>
+    <div class="container-fluid" style="background-color: rgb(213, 221, 219)">
+        <div class="container">
+            <p class="display-4 pt-3 parafooter fw-bolder">GreenFood</p>
+            <div class="row">
+                <div class="col-lg-3 mt-3">
+                    <h4 class="fw-bold">Switcher entre les pages</h4>
+                    <p class="mb-2">
+                    <ul>
+                        <li class="foot"><a class="foot1"href="#">Accueil</a></li>
+                        <li class="foot"><a class="foot1" href="pages/menu/menu.html">Menu</a></li>
+                        <li class="foot"><a class="foot1"href="pages/blog/blog.html">Blog</a></li>
+                        <li class="foot"><a class="foot1"href="pages/reservation/reservation.html">Reservation</a></li>
+                        <li class="foot"><a class="foot1"href="pages/nos%20recettes/recettes.html">Nos recettes</a></li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-lg-3 mt-3">
+                    <h4 class="fw-bold">Localisation</h4>
+                    <p class="mb-5">
+                        Restaurant GreenFood Bonapriso rue Dominique Savio <br>
+                        Telephone: 675750282 / 693959375
+                    </p>
+
+                </div>
+                <div class="col-lg-3 mt-3">
+                    <h4 class="fw-bold">Horaires d'ouverture</h4>
+                    <p class="mb-5">
+                        DEJEUNER <br>
+                        Lundi a Dimanche <br>
+                        Reservations de 7h a 20h <br>
+                        et le Dimanche de 10h 0 15h <br>
+
+                        DINER <br>
+                        Lundi a Samedi <br>
+                        Reservations de 12h a 20h30 <br>
+                    </p>
+                </div>
+                <div class="col-lg-3 mt-3">
+                    <h4 class="fw-bold">Nos réseaux sociaux</h4>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook  border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i></a>
+                    <a href="https://www.instagram"><i class="fa-brands fa-instagram border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+</footer>
+
+<script>
+    function ouvrirpage() {
+        let x=document.getElementById("search").value
+
+        if (x === "les entrées") {
+            window.open("http://localhost:63342/Dernier%20GreenFood/pages/nos%20recettes/apperetif_bouchee.html")
+        }
+    }
+</script>
+
+<script src="js/index.js"></script>
+<script src="js/jquery.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
