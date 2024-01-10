@@ -68,32 +68,44 @@
         </div>
     </div>
 </nav>
-<div class="container mt-5 border" style="background-color: white;height: 450px;width: 400px">
+
+<div class="container mt-5 border" style="background-color: white;height: 450px;width: 400px" >
+
     <h3 class="text-center mt-3" style="font-family: 'playfair',sans-serif;text-decoration: underline">Créez un compte</h3>
-    <form class="row g-3" >
+
+    <form class="row g-3" action="#">
+
         <div class="row g-3">
-            <div class="col">
-                <label for="inputNom" class="form-label ">Nom</label>
-                <input type="text" class="form-control bg-transparent "  id="inputNom" required="required" >
+            <div class="col form-group">
+                <label for="nom" class="form-label "></label>
+                <input type="text" class="form-control bg-transparent " id="nom"  placeholder=" Entrez votre nom" required="required" >
             </div>
         </div>
+
         <div class="row g-3">
-            <div class="col">
-                <label for="inputEmail" class="form-label"> Email</label>
-                <input type="email" class="form-control bg-transparent" id="inputEmail" required="required" >
+            <div class="col form-group">
+                <label for="email" class="form-label"></label>
+                <input type="email" class="form-control bg-transparent" id="email"  placeholder=" Entrez votre Email" required="required" >
             </div>
         </div>
+
         <div class="row g-3 ">
-            <div class="col">
-                <label for="inputPws" class="form-label">Mot de passe</label>
-                <input type="password" class="form-control bg-transparent"  id="inputPws" required="required" >
+            <div class="col form-group">
+                <label for="password" class="form-label"></label>
+                <input type="password" class="form-control bg-transparent" id="password"   placeholder="Entrez un mot de passe" required="required"  >
             </div>
         </div>
+
         <div class="col text-center mt-4 g-2" style="background-color: black; width: 300px">
-            <button type="submit" class="btn  text-light"> <a href="../../index.html" style="text-decoration: none; color: white">Soumettre</a></button>
+            <button type="submit" onclick="saveData()" class="btn text-light" id="btninscription">Valider</button>
+        </div>
+
+        <div class="col text-center mt-4 g-2" style="background-color: black; width: 300px">
+            <button class="btn text-light" id="btnconnexion"><a href="connexion2.html" style=" text-decoration: none; color: white">Se connecter</a></button>
         </div>
     </form>
-</div>
+
+
 </div>
 
 <footer>
@@ -147,6 +159,7 @@
     </div>
 </footer>
 
+<script src="../../js/inscription2.js"></script>
 <script src="../../js/index.js"></script>
 <script src="../../js/jquery.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
