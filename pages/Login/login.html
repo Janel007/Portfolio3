@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GreenFood Company</title>
+    <link rel="icon" href="../../image/Logo%202.png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top" style="font-family:'roboto',sans-serif">
+    <div class="d-lg-none d-md-none mb-1" style="position: relative; left: 130px">
+        <a class="navbar-brand"  href="../../index.html"><img src="../../image/Logo%208.png" style="width:100px;height:60px;" class="rounded mx-3" alt=""></a>
+    </div>
+    <div class="container-fluid mt-2 mb-2">
+        <a class="navbar-brand d-none d-lg-block" href="../../index.html"><img src="../../image/Logo%208.png" style="width:100px;height:60px;" class="rounded mx-3" alt=""></a>
+        <a class="navbar-brand d-none d-lg-none d-md-block" href="../../index.html"><img src="../../image/Logo%208.png" style="width:100px;height:60px; position: relative; left: 360px" class="rounded mx-3" alt=""></a>
+        <input type="search" class="form-control text-primary d-lg-none mb-2" id="search2" onchange="ouvrirpage2()" value="" placeholder="Entrez une Catégorie de Recette">
+        <section class="d-lg-none mb-1">
+            <a href="#"><i class="fas fa-search me-3"style="color: white"></i></a>
+            <a href="../../pages/inscription/inscription2.html"> <i class="fa-solid fa-user icon mx-4" style="color: white"></i></a>
+        </section>
+        <button class="navbar-toggler mb-2" type="button" style="background-color: white" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0 fs-5 ">
+                <li class="nav-item mx-2 px-2">
+                    <a class="nav-link actives" aria-current="page" href="#">Accueil</a>
+                </li>
+                <div class="dropdown">
+                    <a class="nav-link  mx-2 px-2 dropdown-toggle text-light" href="../../pages/menu/menu.html" data-bs-toggle="dropdown" aria-expanded="false">
+                        La Carte
+                    </a>
+                    <ul class="dropdown-menu opacity-75" style="background-color: dimgray">
+                        <li><a class="dropdown-item" href="../../pages/menu/menu.html#Nos entrees et apperitifs">Nos Entrées et Appéritifs</a></li>
+                        <li><a class="dropdown-item" href="../../pages/menu/menu.html#Nos plats">Nos Plats</a></li>
+                        <li><a class="dropdown-item" href="../../pages/menu/menu.html#Nos desserts">Nos Desserts</a></li>
+                        <li><a class="dropdown-item" href="../../pages/menu/menu.html#Nos cocktails">Nos Cocktails</a></li>
+
+                    </ul>
+                </div>
+                <li class="nav-item mx-2 px-2">
+                    <a class="nav-link" href="../../pages/nos%20recettes/recettes.html">Nos Récettes</a>
+                </li>
+                <li class="nav-item mx-2 px-2">
+                    <a class="nav-link" href="../../pages/blog/blog.html">Actualités</a>
+                </li>
+                <li class="nav-item mx-2 px-2">
+                    <a class="nav-link" href="../../pages/New%20blog/new_blog.html">Blog</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link px-2" href="../../pages/reservation/reservation.html">Réservation</a>
+                </li>
+
+            </ul>
+
+
+            <section class="d-none d-md-none d-lg-block d-lg-flex">
+                <input type="search" id="search" onchange="ouvrirpage()" value="" class="form-control text-primary me-3" placeholder="Entrez une Catégorie de Recette">
+                <a href="../../index.html"><i class="fas fa-search me-3 cible"style="color: white"></i></a>
+                <a href="../../pages/inscription/inscription2.html"> <i class="fa-solid fa-user icon mx-4" style="color: white" ></i></a>
+            </section>
+        </div>
+    </div>
+</nav>
+<div class="container mt-4 mb-5">
+    <div class="card" style="border: none;width: 100%;height: 150px; background-color: #ffffff">
+        <button onclick="logOut()" style="float: right">Sortir</button>
+        <hr>
+        <h3>Soyez la Bienvenue Mr/Mme</h3>
+        <h4>
+            <script>
+                document.write(localStorage.getItem("nom"))
+            </script>
+        </h4>
+    </div>
+</div>
+
+<footer>
+    <div class="container-fluid" style="background-color: rgb(213, 221, 219)">
+        <div class="container">
+            <p class="display-4 pt-3 parafooter fw-bolder">GreenFood</p>
+            <div class="row">
+                <div class="col-lg-3 mt-3">
+                    <h4 class="fw-bold">Switcher entre les pages</h4>
+                    <p class="mb-2">
+                    <ul>
+                        <li class="foot"><a class="foot1"href="../../index.html">Accueil</a></li>
+                        <li class="foot"><a class="foot1" href="../menu/menu.html">Menu</a></li>
+                        <li class="foot"><a class="foot1"href="../blog/blog.html">Blog</a></li>
+                        <li class="foot"><a class="foot1"href="../reservation/reservation.html">Reservation</a></li>
+                        <li class="foot"><a class="foot1"href="../nos%20recettes/recettes.html">Nos recettes</a></li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-lg-3 mt-3">
+                    <h4 class="fw-bold">Localisation</h4>
+                    <p class="mb-5">
+                        Restaurant GreenFood Bonapriso rue Dominique Savio <br>
+                        Telephone: 675750282 / 693959375
+                    </p>
+
+                </div>
+                <div class="col-lg-3 mt-3">
+                    <h4 class="fw-bold">Horaires d'ouverture</h4>
+                    <p class="mb-5">
+                        DEJEUNER <br>
+                        Lundi a Dimanche <br>
+                        Reservations de 7h a 20h <br>
+                        et le Dimanche de 10h 0 15h <br>
+
+                        DINER <br>
+                        Lundi a Samedi <br>
+                        Reservations de 12h a 20h30 <br>
+                    </p>
+                </div>
+                <div class="col-lg-3 mt-3">
+                    <h4 class="fw-bold">Nos réseaux sociaux</h4>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook  border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i></a>
+                    <a href="https://www.instagram"><i class="fa-brands fa-instagram border border-black p-2 mx-2" style="border-radius: 100%;height: 20px;width: 20px"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+</footer>
+
+<script>
+    function logOut() {
+        localStorage.removeItem("nom")
+        localStorage.removeItem("email")
+        window.location.href="../../index.html"
+
+    }
+</script>
+</body>
+</html>

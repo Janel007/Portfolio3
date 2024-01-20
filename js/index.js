@@ -17,19 +17,19 @@ let submitBtn = document.querySelector("button")
 function ouvrirpage() {
     let x=document.getElementById("search").value
 
-    if (x === "les appéritifs" || x ==="appéritifs" || x ==="appéritif") {
+    if (x === "les appéritifs" || x ==="appéritifs" || x ==="appéritif" || x ==="Appéritifs" || x ==="Les Appéritifs" || x ==="Les appéritifs" || x ==="Appéritif") {
         window.open("https://janelgreenfood.onrender.com/pages/nos%20recettes/apperetif_bouchee.html")
     }
-    else if (x === "les entrées" || x ==="entrées" || x ==="entrée") {
+    else if (x === "les entrées" || x ==="entrées" || x ==="entrée" || x ==="Les Entrées" || x ==="Entrée" || x ==="Les entrées") {
         window.open("https://janelgreenfood.onrender.com/pages/nos%20recettes/salade.html")
     }
-    else if (x === "les plats" || x ==="plats" || x ==="plat" || x ==="plats de résistance" || x ==="plat de résistance") {
+    else if (x === "les plats" || x ==="plats" || x ==="plat" || x ==="plats de résistance" || x ==="plat de résistance" || x ==="Plats" || x ==="Les plats" || x ==="Les Plats") {
         window.open("https://janelgreenfood.onrender.com/pages/nos%20recettes/plat_traditionnels.html")
     }
-    else if (x === "les desserts" || x ==="desserts" || x ==="dessert") {
+    else if (x === "les desserts" || x ==="desserts" || x ==="dessert" || x ==="Les desserts" || x ==="Les Desserts" || x ==="Desserts") {
         window.open("https://janelgreenfood.onrender.com/pages/nos%20recettes/verrines.html")
     }
-    else if (x ==="les cocktails" || x ==="cocktails" || x ==="cocktail" || x ==="boissons" || x ==="boisson"){
+    else if (x ==="les cocktails" || x ==="cocktails" || x ==="cocktail" || x ==="boissons" || x ==="boisson" || x ==="Cocktail" || x ==="Les Cocktails" || x ==="Les cocktails"){
         window.open("https://janelgreenfood.onrender.com/pages/nos%20recettes/cocktail.html")
     }
     else {
